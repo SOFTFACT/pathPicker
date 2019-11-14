@@ -1,0 +1,224 @@
+﻿{
+	"Sources/Methods/HDI_PATH_PICKER.4dm": {
+		"left": 506,
+		"top": 120,
+		"width": 1361,
+		"height": 1628
+	},
+	"Sources/Forms/HDI_PATH_PICKER/method.4dm": {
+		"left": 1979,
+		"top": 211,
+		"width": 1056,
+		"height": 1088
+	},
+	"Sources/Forms/PATH PICKER/method.4dm": {
+		"left": 1340,
+		"top": 245,
+		"width": 811,
+		"height": 1136
+	},
+	"Sources/Methods/pathPicker.4dm": {
+		"left": 1494,
+		"top": 103,
+		"width": 1120,
+		"height": 1609
+	},
+	"Sources/Methods/PathPicker SET OPTIONS.4dm": {
+		"left": 1630,
+		"top": 113,
+		"width": 1132,
+		"height": 1614
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/browse.4dm": {
+		"left": 1290,
+		"top": 966,
+		"width": 1122,
+		"height": 350
+	},
+	"Sources/Methods/path_picker_Get_object.4dm": {
+		"left": 1613,
+		"top": 166,
+		"width": 1361,
+		"height": 1628
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/all.4dm": {
+		"left": 831,
+		"top": 1205,
+		"width": 1060,
+		"height": 522
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/widget_path.4dm": {
+		"left": 351,
+		"top": 242,
+		"width": 842,
+		"height": 886
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/none.4dm": {
+		"left": 1252,
+		"top": 1367,
+		"width": 728,
+		"height": 350
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/showOnDisk.4dm": {
+		"left": 1180,
+		"top": 542,
+		"width": 1122,
+		"height": 350
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/copyPath.4dm": {
+		"left": 1180,
+		"top": 542,
+		"width": 1122,
+		"height": 350
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/openItem.4dm": {
+		"left": 1180,
+		"top": 542,
+		"width": 1122,
+		"height": 350
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/type.4dm": {
+		"left": 1016,
+		"top": 1240,
+		"width": 1115,
+		"height": 350
+	},
+	"Sources/Methods/PathPicker SET TYPE.4dm": {
+		"left": 1252,
+		"top": 103,
+		"width": 1361,
+		"height": 1628
+	},
+	"Sources/Methods/pathPicker SET MESSAGE.4dm": {
+		"left": 1252,
+		"top": 103,
+		"width": 1361,
+		"height": 1628
+	},
+	"Sources/Methods/path_picker_SET_TEXT_ATTRIBUTE.4dm": {
+		"left": 1565,
+		"top": 821,
+		"width": 789,
+		"height": 970
+	},
+	"Sources/Forms/PATH PICKER/ObjectMethods/automatic_font.4dm": {
+		"left": 810,
+		"top": 1389,
+		"width": 1177,
+		"height": 350
+	},
+	"Sources/Forms/PATH PICKER/ObjectMethods/browse.4dm": {
+		"left": 1103,
+		"top": 123,
+		"width": 772,
+		"height": 1459
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/placeholder.4dm": {
+		"left": 817,
+		"top": 1045,
+		"width": 863,
+		"height": 350
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/message.4dm": {
+		"left": 817,
+		"top": 1045,
+		"width": 863,
+		"height": 350
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/Button.4dm": {
+		"left": 159,
+		"top": 672,
+		"width": 1069,
+		"height": 637
+	},
+	"Sources/Forms/PATH PICKER/ObjectMethods/plus.4dm": {
+		"left": 1742,
+		"top": 145,
+		"width": 634,
+		"height": 350
+	},
+	"Trash/Methods/(path_picker_SET_LABEL).4dm": {
+		"left": 626,
+		"top": 111,
+		"width": 1361,
+		"height": 1628
+	},
+	"Trash/Methods/(path_picker_UPDATE_UI).4dm": {
+		"left": 626,
+		"top": 111,
+		"width": 1361,
+		"height": 1628
+	},
+	"Trash/Methods/(path_picker_INIT).4dm": {
+		"left": 626,
+		"top": 111,
+		"width": 857,
+		"height": 962
+	},
+	"Sources/Methods/COMPILER_HDI.4dm": {
+		"left": 1357,
+		"top": 344,
+		"width": 572,
+		"height": 365
+	},
+	"Sources/Methods/COMPILER_PATH PICKER.4dm": {
+		"left": 626,
+		"top": 111,
+		"width": 872,
+		"height": 694
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/setDocument.4dm": {
+		"left": 159,
+		"top": 672,
+		"width": 621,
+		"height": 350
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/Button1.4dm": {
+		"left": 513,
+		"top": 993,
+		"width": 1069,
+		"height": 637
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/setFolder.4dm": {
+		"left": 513,
+		"top": 993,
+		"width": 1069,
+		"height": 637
+	},
+	"Sources/Forms/Form1/method.4dm": {
+		"left": 513,
+		"top": 993,
+		"width": 1069,
+		"height": 637
+	},
+	"Sources/Forms/Form1/ObjectMethods/Datepicker.4dm": {
+		"left": 1609,
+		"top": 294,
+		"width": 1041,
+		"height": 1336
+	},
+	"Sources/Forms/Form1/ObjectMethods/Datepicker1.4dm": {
+		"left": 513,
+		"top": 993,
+		"width": 1069,
+		"height": 637
+	},
+	"Sources/Forms/Form1/ObjectMethods/Button.4dm": {
+		"left": 1609,
+		"top": 294,
+		"width": 1041,
+		"height": 1336
+	},
+	"Sources/Forms/Form1/ObjectMethods/DateEntry.4dm": {
+		"left": 1609,
+		"top": 294,
+		"width": 1041,
+		"height": 1336
+	},
+	"Sources/Forms/Form1/ObjectMethods/Clock.4dm": {
+		"left": 1609,
+		"top": 294,
+		"width": 1041,
+		"height": 1336
+	}
+}

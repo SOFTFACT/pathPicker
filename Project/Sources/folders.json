@@ -1,0 +1,20 @@
+﻿{
+	"HDI": {
+		"methods": [
+			"COMPILER_HDI",
+			"HDI_PATH_PICKER"
+		],
+		"forms": [
+			"HDI_PATH_PICKER"
+		]
+	},
+	"widget": {
+		"methods": [
+			"COMPILER_PATH PICKER"
+		],
+		"forms": [
+			"PATH PICKER"
+		]
+	},
+	"trash": {}
+}

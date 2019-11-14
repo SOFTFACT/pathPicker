@@ -1,0 +1,16 @@
+﻿{
+	"forms": {
+		"HDI_PATH_PICKER": {
+			"timeStamp": "2019-11-12T10:11:44.678Z",
+			"destination": "detailScreen"
+		},
+		"Form1": {
+			"timeStamp": "2019-11-12T11:02:29.364Z",
+			"destination": "detailScreen"
+		},
+		"PATH PICKER": {
+			"timeStamp": "2019-11-12T10:31:03.717Z",
+			"destination": "detailScreen"
+		}
+	}
+}

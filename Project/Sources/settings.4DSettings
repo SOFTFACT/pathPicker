@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="2168">
+	<com.4d>
+		<compiler>
+			<options compilation_path="3" fat_binary="true" range_checking="true"/>
+			<typage default_for_button="2"/>
+			<method_suffix arrays="" interprocess_arrays="" interprocess_variables="" methods="" variables=""/>
+		</compiler>
+		<general execute_host_database_event="true">
+			<font font_name="Arial" font_size="12"/>
+		</general>
+		<web>
+			<standalone_server>
+				<configuration automatic_session_management="true"/>
+				<misc/>
+			</standalone_server>
+			<remote>
+				<configuration automatic_session_management="true"/>
+				<misc/>
+			</remote>
+		</web>
+		<database>
+			<misc/>
+		</database>
+		<sql>
+			<engine case_sensitive="true"/>
+		</sql>
+		<server>
+			<network>
+				<options use_legacy_network_layer="false"/>
+			</network>
+		</server>
+		<deployment>
+			<options/>
+		</deployment>
+	</com.4d>
+</preferences>

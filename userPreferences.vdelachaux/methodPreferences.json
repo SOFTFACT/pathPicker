@@ -1,0 +1,337 @@
+﻿{
+	"Sources/Methods/HDI_PATH_PICKER.4dm": {
+		"startSelection": 46,
+		"endSelection": 46,
+		"firstSelectedLine": 42,
+		"lastSelectedLine": 42,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-08-09T15:10:35.842Z"
+	},
+	"Sources/Forms/HDI_PATH_PICKER/method.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 18,
+		"lastSelectedLine": 18,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-05T17:12:49.599Z"
+	},
+	"Sources/Forms/PATH PICKER/method.4dm": {
+		"startSelection": 30,
+		"endSelection": 30,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-05T16:34:01.959Z"
+	},
+	"Sources/Methods/pathPicker.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 182,
+		"lastSelectedLine": 182,
+		"folding": [
+			145
+		],
+		"bookmarks": [],
+		"stamp": "2019-11-12T10:41:49.466Z"
+	},
+	"Sources/Methods/PathPicker SET OPTIONS.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 21,
+		"lastSelectedLine": 21,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-05T15:32:17.500Z"
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/browse.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-05T17:27:49.130Z"
+	},
+	"Sources/Methods/path_picker_Get_object.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 43,
+		"lastSelectedLine": 43,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-08-09T15:10:35.859Z"
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/all.4dm": {
+		"startSelection": 36,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-05T17:22:28.650Z"
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/widget_path.4dm": {
+		"startSelection": 28,
+		"endSelection": 28,
+		"firstSelectedLine": 46,
+		"lastSelectedLine": 46,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-05T17:21:12.542Z"
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/none.4dm": {
+		"startSelection": 37,
+		"endSelection": 37,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-05T17:22:41.432Z"
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/showOnDisk.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-05T17:28:06.379Z"
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/copyPath.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-05T17:28:12.241Z"
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/openItem.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-05T17:28:17.529Z"
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/type.4dm": {
+		"startSelection": 32,
+		"endSelection": 32,
+		"firstSelectedLine": 6,
+		"lastSelectedLine": 6,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-05T17:23:09.106Z"
+	},
+	"Sources/Methods/PathPicker SET TYPE.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-08-09T15:10:35.846Z"
+	},
+	"Sources/Methods/pathPicker SET MESSAGE.4dm": {
+		"startSelection": 45,
+		"endSelection": 52,
+		"firstSelectedLine": 43,
+		"lastSelectedLine": 43,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-08-09T15:10:35.859Z"
+	},
+	"Sources/Methods/path_picker_SET_TEXT_ATTRIBUTE.4dm": {
+		"startSelection": 20,
+		"endSelection": 20,
+		"firstSelectedLine": 50,
+		"lastSelectedLine": 50,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-08-09T15:10:35.860Z"
+	},
+	"Sources/Forms/PATH PICKER/ObjectMethods/automatic_font.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-05-06T07:32:45.840Z"
+	},
+	"Sources/Forms/PATH PICKER/ObjectMethods/browse.4dm": {
+		"startSelection": 7,
+		"endSelection": 7,
+		"firstSelectedLine": 103,
+		"lastSelectedLine": 103,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-06T10:57:01.769Z"
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/placeholder.4dm": {
+		"startSelection": 24,
+		"endSelection": 24,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-05T17:23:42.779Z"
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/message.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-05-06T07:32:45.831Z"
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/Button.4dm": {
+		"startSelection": 13,
+		"endSelection": 13,
+		"firstSelectedLine": 20,
+		"lastSelectedLine": 20,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-06T13:05:01.011Z"
+	},
+	"Sources/Forms/PATH PICKER/ObjectMethods/plus.4dm": {
+		"startSelection": 19,
+		"endSelection": 19,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-06T10:57:02.082Z"
+	},
+	"Trash/Methods/(path_picker_SET_LABEL).4dm": {
+		"startSelection": 13,
+		"endSelection": 27,
+		"firstSelectedLine": 82,
+		"lastSelectedLine": 82,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-08-09T15:10:35.860Z"
+	},
+	"Trash/Methods/(path_picker_UPDATE_UI).4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-08-09T15:10:35.860Z"
+	},
+	"Trash/Methods/(path_picker_INIT).4dm": {
+		"startSelection": 18,
+		"endSelection": 15,
+		"firstSelectedLine": 40,
+		"lastSelectedLine": 52,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-08-09T15:10:35.859Z"
+	},
+	"Sources/Methods/COMPILER_HDI.4dm": {
+		"startSelection": 6,
+		"endSelection": 6,
+		"firstSelectedLine": 6,
+		"lastSelectedLine": 6,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-06T10:50:03.021Z"
+	},
+	"Sources/Methods/COMPILER_PATH PICKER.4dm": {
+		"startSelection": 6,
+		"endSelection": 6,
+		"firstSelectedLine": 8,
+		"lastSelectedLine": 8,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-06T10:50:09.536Z"
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/setDocument.4dm": {
+		"startSelection": 6,
+		"endSelection": 6,
+		"firstSelectedLine": 14,
+		"lastSelectedLine": 14,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-12T10:13:25.930Z"
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/Button1.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-05-06T07:32:45.830Z"
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/setFolder.4dm": {
+		"startSelection": 7,
+		"endSelection": 7,
+		"firstSelectedLine": 14,
+		"lastSelectedLine": 14,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-12T10:40:35.170Z"
+	},
+	"Sources/Forms/Form1/method.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 8,
+		"lastSelectedLine": 8,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-12T11:02:54.463Z"
+	},
+	"Sources/Forms/Form1/ObjectMethods/Datepicker.4dm": {
+		"startSelection": 13,
+		"endSelection": 13,
+		"firstSelectedLine": 8,
+		"lastSelectedLine": 8,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-12T10:46:23.823Z"
+	},
+	"Sources/Forms/Form1/ObjectMethods/Datepicker1.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-12T10:45:53.023Z"
+	},
+	"Sources/Forms/Form1/ObjectMethods/Button.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-12T10:47:50.918Z"
+	},
+	"Sources/Forms/Form1/ObjectMethods/DateEntry.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-12T10:50:47.148Z"
+	},
+	"Sources/Forms/Form1/ObjectMethods/Clock.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2019-11-12T10:52:21.962Z"
+	}
+}
