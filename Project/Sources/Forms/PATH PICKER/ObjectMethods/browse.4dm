@@ -74,13 +74,7 @@ Case of
 		  //______________________________________________________
 	: ($Lon_event=On Drag Over:K2:13)
 		
-		$t:=Get file from pasteboard:C976(1)
-		
-		If (Test path name:C476($t)=Num:C11(Form:C1466.type))
-			
-			$0:=0
-			
-		End if 
+		$0:=-1+Num:C11(Test path name:C476(Get file from pasteboard:C976(1))=Num:C11(Form:C1466.type))
 		
 		  //______________________________________________________
 	: ($Lon_event=On Drop:K2:12)
@@ -98,7 +92,7 @@ End case
 
 If ($success)
 	
-	Form:C1466.accessPath:=$t
-	Form:C1466._updateLabel($t)
+	Form:C1466.platformPath:=$t
+	Form:C1466.updateLabel($t)
 	
 End if 

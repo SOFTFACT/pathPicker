@@ -32,8 +32,8 @@ Case of
 				OBJECT GET COORDINATES:C663(*;"browse";$left;$top;$right;$bottom)
 				$right:=$left-5
 				
-				OBJECT GET COORDINATES:C663(*;"accessPath";$left;$top;$l;$bottom)
-				OBJECT SET COORDINATES:C1248(*;"accessPath";$left;$top;$right;$bottom)
+				OBJECT GET COORDINATES:C663(*;"platformPath";$left;$top;$l;$bottom)
+				OBJECT SET COORDINATES:C1248(*;"platformPath";$left;$top;$right;$bottom)
 				
 				OBJECT GET COORDINATES:C663(*;"border";$left;$top;$l;$bottom)
 				OBJECT SET COORDINATES:C1248(*;"border";$left;$top;$right;$bottom)
@@ -48,8 +48,8 @@ Case of
 				
 				OBJECT GET COORDINATES:C663(*;"browse";$left;$top;$right;$bottom)
 				
-				OBJECT GET COORDINATES:C663(*;"accessPath";$left;$top;$l;$bottom)
-				OBJECT SET COORDINATES:C1248(*;"accessPath";$left;$top;$right;$bottom)
+				OBJECT GET COORDINATES:C663(*;"platformPath";$left;$top;$l;$bottom)
+				OBJECT SET COORDINATES:C1248(*;"platformPath";$left;$top;$right;$bottom)
 				
 				OBJECT GET COORDINATES:C663(*;"border";$left;$top;$l;$bottom)
 				OBJECT SET COORDINATES:C1248(*;"border";$left;$top;$right;$bottom)
@@ -57,7 +57,7 @@ Case of
 			End if 
 		End if 
 		
-		OBJECT SET PLACEHOLDER:C1295(*;"accessPath";String:C10(Form:C1466.placeHolder))
+		OBJECT SET PLACEHOLDER:C1295(*;"platformPath";String:C10(Form:C1466.placeHolder))
 		
 		  //______________________________________________________
 	: ($Lon_event=On Resize:K2:27)

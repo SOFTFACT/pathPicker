@@ -1,7 +1,7 @@
 //%attributes = {"invisible":true}
   // ----------------------------------------------------
-  // Project method : pathPicker SET DIRECTORY
-  // ID[22365EAA97E546159FA239A7A658E5BA]
+  // Project method : pathPicker SET MESSAGE
+  // ID[A5D95D40CFD6461CA50862466531CD28]
   // Created #26-11-2014 by Vincent de Lachaux
   // ----------------------------------------------------
   // Description:
@@ -12,11 +12,11 @@ C_TEXT:C284($1)
 C_TEXT:C284($2)
 
 C_LONGINT:C283($Lon_parameters)
-C_TEXT:C284($Txt_directory;$Txt_widget)
+C_TEXT:C284($Txt_message;$Txt_widget)
 
 If (False:C215)
-	C_TEXT:C284(pathPicker SET DIRECTORY ;$1)
-	C_TEXT:C284(pathPicker SET DIRECTORY ;$2)
+	C_TEXT:C284(pathPicker SET MESSAGE ;$1)
+	C_TEXT:C284(pathPicker SET MESSAGE ;$2)
 End if 
 
   // ----------------------------------------------------
@@ -31,7 +31,7 @@ If (Asserted:C1132($Lon_parameters>=1;"Missing parameter"))
 	  //Optional parameters
 	If ($Lon_parameters>=2)
 		
-		$Txt_directory:=$2
+		$Txt_message:=$2
 		
 	End if 
 	
@@ -42,7 +42,7 @@ Else
 End if 
 
   // ----------------------------------------------------
-path_picker_SET_TEXT_ATTRIBUTE ($Txt_widget;"directory";$Txt_directory)
+_o_SET_TEXT_ATTRIBUTE ($Txt_widget;"message";$Txt_message)
 
   // ----------------------------------------------------
   // Return

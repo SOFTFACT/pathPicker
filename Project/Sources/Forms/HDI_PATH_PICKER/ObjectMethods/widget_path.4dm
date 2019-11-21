@@ -27,7 +27,7 @@ Case of
 			"message";"Select a file:";\
 			"placeHolder";"Please select a .txt file")
 		
-		Form:C1466.path:=pathPicker ("";$o)
+		Form:C1466.widget:=pathPicker ("";$o)
 		
 		  // Resize the widget
 		OBJECT GET COORDINATES:C663(*;$Txt_me+".template";$left;$top;$right;$bottom)

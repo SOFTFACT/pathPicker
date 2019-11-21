@@ -12,10 +12,9 @@ C_OBJECT:C1216($0)
 C_TEXT:C284($1)
 C_OBJECT:C1216($2)
 
-C_LONGINT:C283($Lon_;$bottom;$left)
-C_TEXT:C284($popup;$t;$t;$t;$Txt_File;$Txt_path)
-C_TEXT:C284($Txt_Separator;$Txt_Volume)
-C_OBJECT:C1216($o)
+C_LONGINT:C283($bottom;$left;$right;$top)
+C_TEXT:C284($popup;$t;$t;$Txt_path;$Txt_Separator;$Txt_Volume)
+C_OBJECT:C1216($o;$Path_root)
 C_COLLECTION:C1488($c)
 
 ARRAY TEXT:C222($tTxt_volumes;0)
@@ -31,27 +30,38 @@ If (This:C1470[""]=Null:C1517)  // Constructor
 	
 	$o:=New object:C1471(\
 		"";"pathPicker";\
-		"path";Null:C1517;\
-		"accessPath";"";\
-		"type";Is a document:K24:1;\
-		"options";Package selection:K24:9+Use sheet window:K24:11;\
-		"browse";True:C214;\
-		"showOnDisk";True:C214;\
-		"copyPath";True:C214;\
-		"openItem";True:C214;\
-		"directory";"8858";\
+		"platformPath";"";\
+		"type";Null:C1517;\
+		"options";Null:C1517;\
+		"browse";Null:C1517;\
+		"showOnDisk";Null:C1517;\
+		"copyPath";Null:C1517;\
+		"openItem";Null:C1517;\
+		"directory";Null:C1517;\
 		"fileTypes";"";\
 		"message";"";\
 		"placeHolder";"";\
-		"_lastPath";"";\
+		"target";Null:C1517;\
 		"setPath";Formula:C1597(pathPicker ("setPath";New object:C1471("platformPath";String:C10($1))));\
 		"setOption";Formula:C1597(pathPicker ("setOption";New object:C1471("enable";Bool:C1537($1);"option";String:C10($2))));\
 		"setType";Formula:C1597(pathPicker ("setType";New object:C1471("type";$1)));\
 		"setMessage";Formula:C1597(pathPicker ("setMessage";New object:C1471("message";$1)));\
 		"setPlaceholder";Formula:C1597(pathPicker ("setPlaceholder";New object:C1471("placeHolder";$1)));\
-		"_updateLabel";Formula:C1597(pathPicker ("_updateLabel";New object:C1471("value";String:C10($1))));\
-		"_displayMenu";Formula:C1597(pathPicker ("_displayMenu"))\
+		"updateLabel";Formula:C1597(pathPicker ("updateLabel";New object:C1471("value";String:C10($1))));\
+		"displayMenu";Formula:C1597(pathPicker ("displayMenu"))\
 		)
+	
+	  // Default values
+	$o.type:=Is a document:K24:1
+	
+	$o.options:=Package selection:K24:9+Use sheet window:K24:11
+	
+	$o.browse:=True:C214
+	$o.showOnDisk:=True:C214
+	$o.copyPath:=True:C214
+	$o.openItem:=True:C214
+	$o.directory:=8858
+	$o.fileTypes:=""
 	
 	If (Count parameters:C259=2)
 		
@@ -104,29 +114,8 @@ Else
 			  //______________________________________________________
 		: ($1="setPath")
 			
-			$o.accessPath:=$2.platformPath
-			
-			Case of 
-					
-					  //……………………………………………………………………………………………………………………
-				: (Test path name:C476($o.accessPath)=Is a document:K24:1)
-					
-					$o.path:=File:C1566($o.accessPath)
-					
-					  //……………………………………………………………………………………………………………………
-				: (Test path name:C476($o.accessPath)=Is a folder:K24:2)
-					
-					$o.path:=Folder:C1567($o.accessPath)
-					
-					  //……………………………………………………………………………………………………………………
-				Else 
-					
-					$o.path:=Null:C1517
-					
-					  //……………………………………………………………………………………………………………………
-			End case 
-			
-			$o._updateLabel($o.accessPath)
+			$o.platformPath:=$2.platformPath
+			$o.updateLabel($o.platformPath)
 			
 			  //______________________________________________________
 		: ($1="setType")
@@ -144,11 +133,11 @@ Else
 			$o.placeHolder:=String:C10($2.placeHolder)
 			
 			  //______________________________________________________
-		: ($1="_updateLabel")
+		: ($1="updateLabel")
 			
-			$o.accessPath:=$2.value
+			$o.platformPath:=$2.value
 			
-			If (Length:C16($o.accessPath)>0)
+			If (Length:C16($o.platformPath)>0)
 				
 				  // In remote mode, on macOS, the path can be in PC format if the server is on PC
 				  // E:\Backup Base Rezs v11\Ressources_4D_v11[0373].4BK
@@ -158,14 +147,14 @@ Else
 						  //……………………………………………………………………………………………………………………
 					: (Application type:C494=4D Remote mode:K5:5)\
 						 & (Is macOS:C1572)\
-						 & (Position:C15("\\";$o.accessPath)>0)
+						 & (Position:C15("\\";$o.platformPath)>0)
 						
 						$Txt_Separator:="\\"
 						
 						  //……………………………………………………………………………………………………………………
 					: (Application type:C494=4D Remote mode:K5:5)\
 						 & (Is Windows:C1573)\
-						 & (Position:C15(":";Replace string:C233($o.accessPath;":";"";1))>0)
+						 & (Position:C15(":";Replace string:C233($o.platformPath;":";"";1))>0)
 						
 						$Txt_Separator:=":"
 						
@@ -178,58 +167,51 @@ Else
 				End case 
 				
 				VOLUME LIST:C471($tTxt_volumes)
-				$c:=Split string:C1554($o.accessPath;$Txt_separator)
+				$c:=Split string:C1554($o.platformPath;$Txt_separator;sk ignore empty strings:K86:1)
 				
 				$Txt_Volume:=$c[0]
 				
-				If ($o.path.isFile)
+				If (Test path name:C476($o.platformPath)=Is a document:K24:1)
 					
-					$Txt_File:=$c[$c.length-1]
+					  //
+					$o.target:=File:C1566($o.platformPath;fk platform path:K87:2)
 					
 				Else 
-					  //up one level
-					$Txt_File:=$c[$c.length-1]
+					
+					$o.target:=Folder:C1567($o.platformPath;fk platform path:K87:2)
 					
 				End if 
 				
-				If ($Txt_File#$Txt_Volume)
-					
-					Form:C1466._label:=Replace string:C233(Replace string:C233(Get localized string:C991("FileInVolume");"{file}";$Txt_File);"{volume}";$Txt_Volume)
-					
-				Else 
-					
-					Form:C1466._label:="\""+$Txt_File+"\""
-					
-				End if 
+				$t:=$c[$c.length-1]
+				
+				$o.label:=Choose:C955($t#$Txt_Volume;Replace string:C233(Replace string:C233(Get localized string:C991("FileInVolume");"{file}";$t);"{volume}";$Txt_Volume);"\""+$t+"\"")
 				
 				OBJECT SET VISIBLE:C603(*;"plus";True:C214)
 				
 			Else 
 				
-				Form:C1466._label:=""
+				$o.label:=""
+				$o.target:=Null:C1517
 				OBJECT SET VISIBLE:C603(*;"plus";False:C215)
 				
 			End if 
 			
-			  // Store the current path value
-			Form:C1466._lastPath:=$o.accessPath
-			
 			  //______________________________________________________
-		: ($1="_displayMenu")
+		: ($1="displayMenu")
 			
 			Case of 
 					
 					  //……………………………………………………………………………………………………………………
 				: (Application type:C494=4D Remote mode:K5:5)\
 					 & (Is macOS:C1572)\
-					 & (Position:C15("\\";$o.accessPath)>0)
+					 & (Position:C15("\\";$o.platformPath)>0)
 					
 					$Txt_separator:="\\"
 					
 					  //……………………………………………………………………………………………………………………
 				: (Application type:C494=4D Remote mode:K5:5)\
 					 & (Is Windows:C1573)\
-					 & (Position:C15(":";Replace string:C233($o.accessPath;":";"";1))>0)
+					 & (Position:C15(":";Replace string:C233($o.platformPath;":";"";1))>0)
 					
 					$Txt_separator:=":"
 					
@@ -242,7 +224,10 @@ Else
 			End case 
 			
 			VOLUME LIST:C471($tTxt_volumes)
-			$c:=Split string:C1554($o.accessPath;$Txt_separator)
+			$c:=Split string:C1554($o.platformPath;$Txt_separator)
+			
+			$Path_root:=Folder:C1567(Temporary folder:C486;fk platform path:K87:2).folder(Generate UUID:C1066)
+			$Path_root.create()
 			
 			$popup:=Create menu:C408
 			
@@ -274,18 +259,28 @@ Else
 						
 						SET MENU ITEM ICON:C984($popup;-1;"#images/widgets/path/folder.png")
 						
+						  //$oo:=Folder($Txt_path;fk platform path)
+						  //$p:=$oo.getIcon(32)
+						  //$ooo:=$Path_root.file(Generate UUID)
+						  //WRITE PICTURE FILE($ooo.platformPath;$p;".png")
+						  //SET MENU ITEM ICON($popup;-1;"file://"+$ooo.target)
+						
 						  //……………………………………………………………………………………………………………………
 					: (Test path name:C476($Txt_path)=Is a document:K24:1)
 						
 						SET MENU ITEM ICON:C984($popup;-1;"#images/widgets/path/file.png")
 						
+						  //$oo:=File($Txt_path;fk platform path)
+						  //$p:=$oo.getIcon(32)
+						  //$ooo:=$Path_root.file(Generate UUID)
+						  //WRITE PICTURE FILE($ooo.platformPath;$p;".png")
+						  //SET MENU ITEM ICON($popup;-1;"path:"+$ooo.target)
+						
 						  //……………………………………………………………………………………………………………………
 				End case 
-				
-				
-				
-				
 			End for each 
+			
+			$Path_root.delete(Delete with contents:K24:24)
 			
 			If (Count menu items:C405($popup)>0)
 				

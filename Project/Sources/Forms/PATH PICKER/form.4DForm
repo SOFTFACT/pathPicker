@@ -58,7 +58,7 @@
 						"onClick"
 					]
 				},
-				"accessPath": {
+				"platformPath": {
 					"type": "input",
 					"top": 3,
 					"left": 18,
@@ -73,7 +73,7 @@
 					"sizingX": "grow",
 					"focusable": false,
 					"contextMenu": "none",
-					"dataSource": "Form:C1466._label"
+					"dataSource": "Form:C1466.label"
 				},
 				"browse": {
 					"type": "button",
@@ -119,5 +119,6 @@
 	"$4d": {
 		"version": "1",
 		"kind": "form"
-	}
+	},
+	"shared": true
 }

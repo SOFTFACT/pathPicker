@@ -1,79 +1,13 @@
 ﻿{
 	"methods": {
-		"PathPicker Get placeholder": {
-			"timeStamp": "2019-08-09T15:10:35.845Z",
-			"attributes": {
-				"invisible": true
-			}
-		},
-		"path_picker_SET_TEXT_ATTRIBUTE": {
-			"timeStamp": "2019-08-09T15:10:35.860Z",
-			"attributes": {
-				"invisible": true
-			}
-		},
-		"PathPicker SET OPTIONS": {
-			"timeStamp": "2019-11-05T15:32:17.500Z",
-			"attributes": {
-				"invisible": true
-			}
-		},
-		"pathPicker SET DIRECTORY": {
-			"timeStamp": "2019-08-09T15:10:35.858Z",
-			"attributes": {
-				"invisible": true
-			}
-		},
 		"COMPILER_HDI": {
 			"timeStamp": "2019-11-06T10:50:03.021Z",
 			"attributes": {
 				"invisible": true
 			}
 		},
-		"pathPicker SET MESSAGE": {
-			"timeStamp": "2019-08-09T15:10:35.859Z",
-			"attributes": {
-				"invisible": true
-			}
-		},
 		"pathPicker": {
-			"timeStamp": "2019-11-12T10:41:49.466Z",
-			"attributes": {
-				"invisible": true
-			}
-		},
-		"PathPicker Get option": {
-			"timeStamp": "2019-08-09T15:10:35.845Z",
-			"attributes": {
-				"invisible": true
-			}
-		},
-		"PathPicker SET SELECTION OPTION": {
-			"timeStamp": "2019-08-09T15:10:35.846Z",
-			"attributes": {
-				"invisible": true
-			}
-		},
-		"pathPicker SET FILE TYPES": {
-			"timeStamp": "2019-08-09T15:10:35.859Z",
-			"attributes": {
-				"invisible": true
-			}
-		},
-		"path_picker_Get_object": {
-			"timeStamp": "2019-08-09T15:10:35.859Z",
-			"attributes": {
-				"invisible": true
-			}
-		},
-		"PathPicker SET PLACEHOLDER": {
-			"timeStamp": "2019-08-09T15:10:35.846Z",
-			"attributes": {
-				"invisible": true
-			}
-		},
-		"PathPicker Get type": {
-			"timeStamp": "2019-08-09T15:10:35.845Z",
+			"timeStamp": "2019-11-21T17:48:50.980Z",
 			"attributes": {
 				"invisible": true
 			}
@@ -87,8 +21,20 @@
 				"invisible": true
 			}
 		},
-		"PathPicker SET TYPE": {
-			"timeStamp": "2019-08-09T15:10:35.846Z",
+		"(path_picker_Get_object)": {
+			"timeStamp": "2019-08-09T15:10:35.859Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(pathPicker SET MESSAGE)": {
+			"timeStamp": "2019-11-21T17:21:26.399Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(pathPicker SET FILE TYPES)": {
+			"timeStamp": "2019-11-21T17:21:26.401Z",
 			"attributes": {
 				"invisible": true
 			}
@@ -99,8 +45,26 @@
 				"invisible": true
 			}
 		},
+		"(PathPicker SET TYPE)": {
+			"timeStamp": "2019-08-09T15:10:35.846Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(pathPicker SET DIRECTORY)": {
+			"timeStamp": "2019-11-21T17:21:26.403Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
 		"(path_picker_SET_LABEL)": {
 			"timeStamp": "2019-08-09T15:10:35.860Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(PathPicker Get type)": {
+			"timeStamp": "2019-08-09T15:10:35.845Z",
 			"attributes": {
 				"invisible": true
 			}
@@ -111,8 +75,20 @@
 				"invisible": true
 			}
 		},
+		"(PathPicker Get placeholder)": {
+			"timeStamp": "2019-08-09T15:10:35.845Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
 		"(PathPicker Get message)": {
 			"timeStamp": "2019-08-09T15:10:35.844Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(PathPicker SET OPTIONS)": {
+			"timeStamp": "2019-11-05T15:32:17.500Z",
 			"attributes": {
 				"invisible": true
 			}
@@ -123,8 +99,32 @@
 				"invisible": true
 			}
 		},
+		"(PathPicker SET SELECTION OPTION)": {
+			"timeStamp": "2019-08-09T15:10:35.846Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
 		"(doc_volumeName)": {
 			"timeStamp": "2019-08-09T15:10:35.856Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(PathPicker Get option)": {
+			"timeStamp": "2019-08-09T15:10:35.845Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(_o_SET_TEXT_ATTRIBUTE)": {
+			"timeStamp": "2019-11-21T17:21:26.396Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"(PathPicker SET PLACEHOLDER)": {
+			"timeStamp": "2019-11-21T17:21:26.398Z",
 			"attributes": {
 				"invisible": true
 			}

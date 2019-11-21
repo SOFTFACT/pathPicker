@@ -72,7 +72,7 @@
 						"onLoad",
 						"onDataChange"
 					],
-					"dataSource": "Form:C1466.path"
+					"dataSource": "Form:C1466.widget"
 				},
 				"setDocument": {
 					"type": "button",
@@ -138,7 +138,7 @@
 					"events": [
 						"onClick"
 					],
-					"dataSource": "Form:C1466.path.browse",
+					"dataSource": "",
 					"method": "ObjectMethods/browse.4dm"
 				},
 				"showOnDisk": {
@@ -151,7 +151,7 @@
 					"events": [
 						"onClick"
 					],
-					"dataSource": "Form:C1466.path.showOnDisk",
+					"dataSource": "",
 					"method": "ObjectMethods/showOnDisk.4dm"
 				},
 				"copyPath": {
@@ -165,7 +165,7 @@
 					"events": [
 						"onClick"
 					],
-					"dataSource": "Form:C1466.path.copyPath"
+					"dataSource": ""
 				},
 				"openItem": {
 					"type": "checkbox",
@@ -178,7 +178,7 @@
 					"events": [
 						"onClick"
 					],
-					"dataSource": "Form:C1466.path.openItem"
+					"dataSource": ""
 				},
 				"all": {
 					"type": "button",
@@ -214,8 +214,11 @@
 					"left": 161,
 					"width": 411,
 					"height": 16,
-					"events": [],
-					"dataSource": "Form:C1466.path.placeHolder"
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "",
+					"method": "ObjectMethods/placeholder.4dm"
 				},
 				"message": {
 					"type": "input",
@@ -223,8 +226,10 @@
 					"left": 161,
 					"width": 411,
 					"height": 16,
-					"events": [],
-					"dataSource": "Form:C1466.path.message"
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.widget.message"
 				},
 				"Text": {
 					"type": "text",
@@ -267,7 +272,7 @@
 					"dragging": "none",
 					"dropping": "none",
 					"events": [],
-					"dataSource": "Form:C1466.path.accessPath"
+					"dataSource": "Form:C1466.widget.platformPath"
 				},
 				"Text3": {
 					"type": "text",

@@ -26,7 +26,12 @@ Case of
 		
 		SET TIMER:C645(0)
 		
-		(OBJECT Get pointer:C1124(Object named:K67:5;"type"))->:=1+Num:C11(Form:C1466.path.type)
+		(OBJECT Get pointer:C1124(Object named:K67:5;"type"))->:=1+Num:C11(Form:C1466.widget.type)
+		(OBJECT Get pointer:C1124(Object named:K67:5;"browse"))->:=Num:C11(Form:C1466.widget.browse)
+		(OBJECT Get pointer:C1124(Object named:K67:5;"copyPath"))->:=Num:C11(Form:C1466.widget.copyPath)
+		(OBJECT Get pointer:C1124(Object named:K67:5;"showOnDisk"))->:=Num:C11(Form:C1466.widget.showOnDisk)
+		(OBJECT Get pointer:C1124(Object named:K67:5;"openItem"))->:=Num:C11(Form:C1466.widget.openItem)
+		(OBJECT Get pointer:C1124(Object named:K67:5;"placeHolder"))->:=String:C10(Form:C1466.widget.placeHolder)
 		
 		  //______________________________________________________
 	Else 

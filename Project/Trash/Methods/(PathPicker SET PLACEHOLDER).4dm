@@ -42,7 +42,7 @@ Else
 End if 
 
   // ----------------------------------------------------
-path_picker_SET_TEXT_ATTRIBUTE ($Txt_widget;"placeHolder";$Txt_placeHolder)
+_o_SET_TEXT_ATTRIBUTE ($Txt_widget;"placeHolder";$Txt_placeHolder)
 
   // ----------------------------------------------------
   // Return

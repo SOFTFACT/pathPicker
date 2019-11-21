@@ -51,7 +51,7 @@ Else
 End if 
 
   // ----------------------------------------------------
-path_picker_SET_TEXT_ATTRIBUTE ($Txt_widget;"fileTypes";$Txt_type)
+_o_SET_TEXT_ATTRIBUTE ($Txt_widget;"fileTypes";$Txt_type)
 
   // ----------------------------------------------------
   // Return

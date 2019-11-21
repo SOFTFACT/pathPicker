@@ -4,12 +4,11 @@ $t:=Select folder:C670("";"";0)
 
 If (OK=1)
 	
-	Form:C1466.path.setPath($t)
-	Form:C1466.path.setType(Is a folder:K24:2)
-	Form:C1466.path.setMessage("Select folder:")
-	Form:C1466.path:=Form:C1466.path.setPlaceholder("Please select a folder")
+	Form:C1466.widget.setPath($t)
+	Form:C1466.widget.setType(Is a folder:K24:2)
+	Form:C1466.widget.setMessage("Select folder:")
+	Form:C1466.widget:=Form:C1466.widget.setPlaceholder("Please select a folder")
 	
-	  // Update UI
 	SET TIMER:C645(-1)
 	
 End if 

@@ -1,5 +1,13 @@
 ﻿[
 	{
+		"type": 66,
+		"formula": "Test path name:C476($o.platformPath)=Is a document:K24:1"
+	},
+	{
+		"type": 66,
+		"formula": "This:C1470"
+	},
+	{
 		"type": 1,
 		"category": 6,
 		"expanded": true

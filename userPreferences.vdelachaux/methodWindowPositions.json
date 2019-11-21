@@ -18,28 +18,16 @@
 		"height": 1136
 	},
 	"Sources/Methods/pathPicker.4dm": {
-		"left": 1494,
+		"left": 683,
 		"top": 103,
-		"width": 1120,
-		"height": 1609
-	},
-	"Sources/Methods/PathPicker SET OPTIONS.4dm": {
-		"left": 1630,
-		"top": 113,
-		"width": 1132,
-		"height": 1614
+		"width": 1529,
+		"height": 1602
 	},
 	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/browse.4dm": {
-		"left": 1290,
-		"top": 966,
+		"left": 1141,
+		"top": 1401,
 		"width": 1122,
 		"height": 350
-	},
-	"Sources/Methods/path_picker_Get_object.4dm": {
-		"left": 1613,
-		"top": 166,
-		"width": 1361,
-		"height": 1628
 	},
 	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/all.4dm": {
 		"left": 831,
@@ -72,8 +60,8 @@
 		"height": 350
 	},
 	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/openItem.4dm": {
-		"left": 1180,
-		"top": 542,
+		"left": 1245,
+		"top": 758,
 		"width": 1122,
 		"height": 350
 	},
@@ -83,24 +71,6 @@
 		"width": 1115,
 		"height": 350
 	},
-	"Sources/Methods/PathPicker SET TYPE.4dm": {
-		"left": 1252,
-		"top": 103,
-		"width": 1361,
-		"height": 1628
-	},
-	"Sources/Methods/pathPicker SET MESSAGE.4dm": {
-		"left": 1252,
-		"top": 103,
-		"width": 1361,
-		"height": 1628
-	},
-	"Sources/Methods/path_picker_SET_TEXT_ATTRIBUTE.4dm": {
-		"left": 1565,
-		"top": 821,
-		"width": 789,
-		"height": 970
-	},
 	"Sources/Forms/PATH PICKER/ObjectMethods/automatic_font.4dm": {
 		"left": 810,
 		"top": 1389,
@@ -108,14 +78,14 @@
 		"height": 350
 	},
 	"Sources/Forms/PATH PICKER/ObjectMethods/browse.4dm": {
-		"left": 1103,
-		"top": 123,
-		"width": 772,
-		"height": 1459
+		"left": 528,
+		"top": 133,
+		"width": 928,
+		"height": 1370
 	},
 	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/placeholder.4dm": {
-		"left": 817,
-		"top": 1045,
+		"left": 599,
+		"top": 974,
 		"width": 863,
 		"height": 350
 	},
@@ -168,10 +138,10 @@
 		"height": 694
 	},
 	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/setDocument.4dm": {
-		"left": 159,
-		"top": 672,
-		"width": 621,
-		"height": 350
+		"left": 478,
+		"top": 568,
+		"width": 1104,
+		"height": 736
 	},
 	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/Button1.4dm": {
 		"left": 513,
@@ -220,5 +190,53 @@
 		"top": 294,
 		"width": 1041,
 		"height": 1336
+	},
+	"Trash/Methods/(pathPicker SET MESSAGE).4dm": {
+		"left": 1252,
+		"top": 103,
+		"width": 852,
+		"height": 751
+	},
+	"Trash/Methods/(PathPicker SET OPTIONS).4dm": {
+		"left": 1630,
+		"top": 113,
+		"width": 1132,
+		"height": 1614
+	},
+	"Trash/Methods/(PathPicker SET SELECTION OPTION).4dm": {
+		"left": 1742,
+		"top": 145,
+		"width": 891,
+		"height": 824
+	},
+	"Trash/Methods/(PathPicker SET TYPE).4dm": {
+		"left": 1252,
+		"top": 103,
+		"width": 1361,
+		"height": 1628
+	},
+	"Trash/Methods/(_o_SET_TEXT_ATTRIBUTE).4dm": {
+		"left": 1565,
+		"top": 821,
+		"width": 789,
+		"height": 970
+	},
+	"Trash/Methods/(path_picker_Get_object).4dm": {
+		"left": 1613,
+		"top": 166,
+		"width": 1361,
+		"height": 1628
+	},
+	"Sources/DatabaseMethods/onHostDatabaseEvent.4dm": {
+		"left": 626,
+		"top": 111,
+		"width": 974,
+		"height": 1071
+	},
+	"Sources/Forms/HDI_PATH_PICKER/ObjectMethods/Button2.4dm": {
+		"left": 506,
+		"top": 846,
+		"width": 974,
+		"height": 1071
 	}
 }

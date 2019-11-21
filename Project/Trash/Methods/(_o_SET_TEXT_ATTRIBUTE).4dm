@@ -18,9 +18,9 @@ C_TEXT:C284($Txt_name;$Txt_value;$Txt_widget)
 C_OBJECT:C1216($Obj_widget)
 
 If (False:C215)
-	C_TEXT:C284(path_picker_SET_TEXT_ATTRIBUTE ;$1)
-	C_TEXT:C284(path_picker_SET_TEXT_ATTRIBUTE ;$2)
-	C_TEXT:C284(path_picker_SET_TEXT_ATTRIBUTE ;$3)
+	C_TEXT:C284(_o_SET_TEXT_ATTRIBUTE ;$1)
+	C_TEXT:C284(_o_SET_TEXT_ATTRIBUTE ;$2)
+	C_TEXT:C284(_o_SET_TEXT_ATTRIBUTE ;$3)
 End if 
 
   // ----------------------------------------------------
@@ -49,8 +49,7 @@ Else
 End if 
 
   // ----------------------------------------------------
-OB SET:C1220($Obj_widget;\
-$Txt_name;$Txt_value)
+OB SET:C1220($Obj_widget;$Txt_name;$Txt_value)
 
 $Ptr_widget->:=JSON Stringify:C1217($Obj_widget)
 

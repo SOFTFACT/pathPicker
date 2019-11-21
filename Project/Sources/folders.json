@@ -10,7 +10,8 @@
 	},
 	"widget": {
 		"methods": [
-			"COMPILER_PATH PICKER"
+			"COMPILER_PATH PICKER",
+			"pathPicker"
 		],
 		"forms": [
 			"PATH PICKER"
