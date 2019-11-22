@@ -4,25 +4,25 @@
   // Created #9-9-2014 by Vincent de Lachaux
   // ----------------------------------------------------
   // Declarations
-C_LONGINT:C283($Lon_event)
+C_OBJECT:C1216($event)
 
   // ----------------------------------------------------
   // Initialisations
-$Lon_event:=Form event code:C388
+$event:=FORM Event:C1606
 
   // ----------------------------------------------------
 
 Case of 
 		
 		  //______________________________________________________
-	: ($Lon_event=On Load:K2:1)
+	: ($event.code=On Load:K2:1)
 		
 		GOTO OBJECT:C206(*;"")
 		
 		SET TIMER:C645(-1)
 		
 		  //______________________________________________________
-	: ($Lon_event=On Timer:K2:25)
+	: ($event.code=On Timer:K2:25)
 		
 		SET TIMER:C645(0)
 		
@@ -36,7 +36,7 @@ Case of
 		  //______________________________________________________
 	Else 
 		
-		ASSERT:C1129(False:C215;"Form event activated unnecessary ("+String:C10($Lon_event)+")")
+		ASSERT:C1129(False:C215;"Form event activated unnecessary ("+String:C10($event.code)+")")
 		
 		  //______________________________________________________
 End case 

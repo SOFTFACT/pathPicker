@@ -24,18 +24,6 @@
 		null,
 		{
 			"objects": {
-				"widget_path.template": {
-					"type": "rectangle",
-					"top": 47,
-					"left": 30,
-					"width": 560,
-					"height": 30,
-					"visibility": "hidden",
-					"sizingX": "grow",
-					"fill": "transparent",
-					"stroke": "#0099FF",
-					"strokeDashArray": "1 1"
-				},
 				"Rectangle": {
 					"type": "rectangle",
 					"top": 105,
@@ -58,8 +46,8 @@
 					"type": "subform",
 					"top": 47,
 					"left": 30,
-					"width": 380,
-					"height": 30,
+					"width": 560,
+					"height": 22,
 					"sizingX": "grow",
 					"dataSourceTypeHint": "object",
 					"detailForm": "PATH PICKER",
@@ -72,7 +60,9 @@
 						"onLoad",
 						"onDataChange"
 					],
-					"dataSource": "Form:C1466.widget"
+					"dataSource": "Form:C1466.widget",
+					"right": 590,
+					"borderStyle": "none"
 				},
 				"setDocument": {
 					"type": "button",
@@ -104,7 +94,7 @@
 					"left": 450,
 					"width": 142,
 					"height": 22,
-					"text": "delete",
+					"text": "Reset to initial",
 					"method": "ObjectMethods/Button2.4dm",
 					"events": [
 						"onClick"
@@ -272,7 +262,7 @@
 					"dragging": "none",
 					"dropping": "none",
 					"events": [],
-					"dataSource": "Form:C1466.widget.platformPath"
+					"dataSource": "Form:C1466.widget.target.platformPath"
 				},
 				"Text3": {
 					"type": "text",

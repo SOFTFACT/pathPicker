@@ -1,7 +1,6 @@
 ﻿{
 	"destination": "detailScreen",
 	"windowMinHeight": 30,
-	"formSizeAnchor": "_template",
 	"rightMargin": 0,
 	"bottomMargin": 0,
 	"markerBody": 22,
@@ -25,17 +24,6 @@
 		},
 		{
 			"objects": {
-				"_template": {
-					"type": "rectangle",
-					"top": 0,
-					"left": 0,
-					"width": 373,
-					"height": 22,
-					"sizingX": "grow",
-					"sizingY": "grow",
-					"fill": "transparent",
-					"stroke": "transparent"
-				},
 				"border": {
 					"type": "rectangle",
 					"top": 1,
@@ -48,17 +36,17 @@
 				},
 				"_airbag": {
 					"type": "button",
-					"top": 0,
+					"top": 17,
 					"left": 0,
 					"width": 264,
-					"height": 22,
+					"height": 4,
 					"sizingX": "move",
 					"display": false,
 					"events": [
 						"onClick"
 					]
 				},
-				"platformPath": {
+				"label": {
 					"type": "input",
 					"top": 3,
 					"left": 18,
@@ -73,19 +61,20 @@
 					"sizingX": "grow",
 					"focusable": false,
 					"contextMenu": "none",
-					"dataSource": "Form:C1466.label"
+					"dataSource": "Form:C1466.label",
+					"events": []
 				},
 				"browse": {
 					"type": "button",
 					"top": 1,
 					"left": 328,
 					"width": 45,
-					"height": 20,
+					"height": 21,
 					"sizingX": "move",
 					"fontFamily": "System Font Regular",
 					"fontSize": 13,
 					"text": ":xliff:CommonEllipse",
-					"style": "bevel",
+					"style": "roundedBevel",
 					"dropping": "custom",
 					"method": "ObjectMethods/browse.4dm",
 					"events": [
@@ -94,9 +83,9 @@
 						"onDragOver"
 					],
 					"focusable": false,
-					"bottom": 21
+					"bottom": 22
 				},
-				"plus": {
+				"menu": {
 					"type": "button",
 					"top": 3,
 					"left": 1,
@@ -107,11 +96,32 @@
 					"iconFrames": 4,
 					"textPlacement": "top",
 					"style": "custom",
-					"method": "ObjectMethods/plus.4dm",
+					"method": "ObjectMethods/menu.4dm",
 					"events": [
 						"onClick"
 					],
 					"focusable": false
+				},
+				"menu.expand": {
+					"type": "button",
+					"top": 1,
+					"left": 18,
+					"width": 304,
+					"height": 20,
+					"visibility": "hidden",
+					"icon": "",
+					"iconFrames": 4,
+					"textPlacement": "top",
+					"style": "regular",
+					"method": "ObjectMethods/menu.expand.4dm",
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"display": false,
+					"sizingX": "grow",
+					"right": 322,
+					"bottom": 21
 				}
 			}
 		}

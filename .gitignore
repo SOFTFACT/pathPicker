@@ -1,5 +1,4 @@
-Project/DerivedData
-userPreferences.vdelachaux
-userPreferences.*
-Preferences
-Data
+Project/DerivedData/
+userPreferences.*/
+Preferences/
+Data/

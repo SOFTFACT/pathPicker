@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="2168">
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="2169">
 	<com.4d>
 		<compiler>
-			<options compilation_path="3" fat_binary="true" range_checking="true"/>
+			<options compilation_path="3" error_file="true" fat_binary="true" range_checking="true" symbol_file="true"/>
 			<typage default_for_button="2"/>
 			<method_suffix arrays="" interprocess_arrays="" interprocess_variables="" methods="" variables=""/>
 		</compiler>

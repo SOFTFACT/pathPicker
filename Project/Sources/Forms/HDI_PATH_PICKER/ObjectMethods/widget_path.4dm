@@ -4,51 +4,43 @@
   // Created #9-9-2014 by Vincent de Lachaux
   // ----------------------------------------------------
   // Declarations
-C_LONGINT:C283($bottom;$left;$Lon_event;$right;$top)
-C_TEXT:C284($Txt_me)
-C_OBJECT:C1216($o)
+C_TEXT:C284($me;$t)
+C_OBJECT:C1216($event;$o)
 
   // ----------------------------------------------------
   // Initialisations
-$Lon_event:=Form event code:C388
-$Txt_me:=OBJECT Get name:C1087(Object current:K67:2)
+$event:=FORM Event:C1606
+$me:=OBJECT Get name:C1087(Object current:K67:2)
 
   // ----------------------------------------------------
 Case of 
 		
-		  //______________________________________________________
-	: ($Lon_event=On Load:K2:1)
+		  //……………………………………………………………………………………………
+	: ($event.code=On Load:K2:1)
 		
+		  // Path to the initial target (can be empty)
+		$t:=System folder:C487(Documents folder:K41:18)
+		
+		  // Options if any (can be omitted)
 		$o:=New object:C1471(\
-			"type";Is a document:K24:1;\
-			"options";Package selection:K24:9+Use sheet window:K24:11;\
-			"directory";"8858";\
+			"options";Package open:K24:8+Alias selection:K24:10+Use sheet window:K24:11;\
 			"fileTypes";".txt";\
+			"directory";8858;\
 			"message";"Select a file:";\
 			"placeHolder";"Please select a .txt file")
 		
-		Form:C1466.widget:=pathPicker ("";$o)
+		Form:C1466.widget:=pathPicker ($t;$o)
 		
-		  // Resize the widget
-		OBJECT GET COORDINATES:C663(*;$Txt_me+".template";$left;$top;$right;$bottom)
-		
-		If (($left+$top+$right+$bottom)#0)
-			
-			OBJECT SET COORDINATES:C1248(*;$Txt_me;$left;$top;$right;$bottom)
-			
-		End if 
-		
-		  //______________________________________________________
-	: ($Lon_event=On Data Change:K2:15)
+		  //……………………………………………………………………………………………
+	: ($event.code=On Data Change:K2:15)
 		
 		  // Update UI
 		SET TIMER:C645(-1)
 		
-		  //______________________________________________________
-		
+		  //……………………………………………………………………………………………
 	Else 
 		
-		ASSERT:C1129(False:C215;"Form event activated unnecessary ("+String:C10($Lon_event)+")")
+		ASSERT:C1129(False:C215;"Form event activated unnecessary ("+String:C10($event.code)+")")
 		
-		  //______________________________________________________
+		  //……………………………………………………………………………………………
 End case 

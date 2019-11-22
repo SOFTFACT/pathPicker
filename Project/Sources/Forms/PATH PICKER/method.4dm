@@ -4,22 +4,55 @@
   // Created #9-9-2014 by Vincent de Lachaux
   // ----------------------------------------------------
   // Declarations
-C_LONGINT:C283($bottom;$l;$left;$Lon_event;$right;$top)
+C_LONGINT:C283($bottom;$l;$left;$Lon_width;$offset;$right)
+C_LONGINT:C283($top;$width)
+C_OBJECT:C1216($event)
 
   // ----------------------------------------------------
   // Initialisations
-$Lon_event:=Form event code:C388
+$event:=FORM Event:C1606
 
   // ----------------------------------------------------
 Case of 
 		
 		  //______________________________________________________
-	: ($Lon_event=On Load:K2:1)
+	: ($event.code=On Resize:K2:27)
+		
+		If (Form:C1466.inited=Null:C1517)
+			
+			Form:C1466.inited:=True:C214
+			
+			OBJECT GET SUBFORM CONTAINER SIZE:C1148($width;$l)
+			
+			FORM GET PROPERTIES:C674(Current form name:C1298;$Lon_width;$l)
+			
+			$offset:=$width-$Lon_width-8
+			
+			OBJECT GET COORDINATES:C663(*;"browse";$left;$top;$right;$bottom)
+			OBJECT SET COORDINATES:C1248(*;"browse";$left+$offset;$top;$right+$offset;$bottom)
+			$right:=$left+$offset-5
+			
+			OBJECT GET COORDINATES:C663(*;"label";$left;$top;$l;$bottom)
+			OBJECT SET COORDINATES:C1248(*;"label";$left;$top;$right;$bottom)
+			
+			OBJECT GET COORDINATES:C663(*;"menu.expand";$left;$top;$l;$bottom)
+			OBJECT SET COORDINATES:C1248(*;"menu.expand";$left;$top;$right;$bottom)
+			
+			OBJECT GET COORDINATES:C663(*;"border";$left;$top;$l;$bottom)
+			OBJECT SET COORDINATES:C1248(*;"border";$left;$top;$right;$bottom)
+			
+		End if 
 		
 		SET TIMER:C645(1)
 		
 		  //______________________________________________________
-	: ($Lon_event=On Timer:K2:25)
+	: ($event.code=On Load:K2:1)\
+		 | ($event.code=On Bound Variable Change:K2:52)
+		
+		SET TIMER:C645(1)
+		
+		  //______________________________________________________
+	: ($event.code=On Timer:K2:25)
 		
 		SET TIMER:C645(0)
 		
@@ -32,8 +65,11 @@ Case of
 				OBJECT GET COORDINATES:C663(*;"browse";$left;$top;$right;$bottom)
 				$right:=$left-5
 				
-				OBJECT GET COORDINATES:C663(*;"platformPath";$left;$top;$l;$bottom)
-				OBJECT SET COORDINATES:C1248(*;"platformPath";$left;$top;$right;$bottom)
+				OBJECT GET COORDINATES:C663(*;"label";$left;$top;$l;$bottom)
+				OBJECT SET COORDINATES:C1248(*;"label";$left;$top;$right;$bottom)
+				
+				OBJECT GET COORDINATES:C663(*;"menu.expand";$left;$top;$l;$bottom)
+				OBJECT SET COORDINATES:C1248(*;"menu.expand";$left;$top;$right;$bottom)
 				
 				OBJECT GET COORDINATES:C663(*;"border";$left;$top;$l;$bottom)
 				OBJECT SET COORDINATES:C1248(*;"border";$left;$top;$right;$bottom)
@@ -48,8 +84,11 @@ Case of
 				
 				OBJECT GET COORDINATES:C663(*;"browse";$left;$top;$right;$bottom)
 				
-				OBJECT GET COORDINATES:C663(*;"platformPath";$left;$top;$l;$bottom)
-				OBJECT SET COORDINATES:C1248(*;"platformPath";$left;$top;$right;$bottom)
+				OBJECT GET COORDINATES:C663(*;"label";$left;$top;$l;$bottom)
+				OBJECT SET COORDINATES:C1248(*;"label";$left;$top;$right;$bottom)
+				
+				OBJECT GET COORDINATES:C663(*;"menu.expand";$left;$top;$l;$bottom)
+				OBJECT SET COORDINATES:C1248(*;"menu.expand";$left;$top;$right;$bottom)
 				
 				OBJECT GET COORDINATES:C663(*;"border";$left;$top;$l;$bottom)
 				OBJECT SET COORDINATES:C1248(*;"border";$left;$top;$right;$bottom)
@@ -57,22 +96,14 @@ Case of
 			End if 
 		End if 
 		
-		OBJECT SET PLACEHOLDER:C1295(*;"platformPath";String:C10(Form:C1466.placeHolder))
+		OBJECT SET PLACEHOLDER:C1295(*;"label";String:C10(Form:C1466.placeHolder))
 		
-		  //______________________________________________________
-	: ($Lon_event=On Resize:K2:27)
-		
-		SET TIMER:C645(-1)
-		
-		  //______________________________________________________
-	: ($Lon_event=On Bound Variable Change:K2:52)
-		
-		SET TIMER:C645(-1)
+		OBJECT SET VISIBLE:C603(*;"menu@";Length:C16(String:C10(Form:C1466.label))>0)
 		
 		  //______________________________________________________
 	Else 
 		
-		ASSERT:C1129(False:C215;"Form event activated unnecessary ("+String:C10($Lon_event)+")")
+		ASSERT:C1129(False:C215;"Form event activated unnecessary ("+String:C10($event.code)+")")
 		
 		  //______________________________________________________
 End case 
