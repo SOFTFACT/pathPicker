@@ -278,10 +278,11 @@ Else
 			End case 
 			
 			VOLUME LIST:C471($tTxt_volumes)
+			
 			$c:=Split string:C1554($o.platformPath;$Txt_separator)
 			
-			$Path_root:=Folder:C1567(Temporary folder:C486;fk platform path:K87:2).folder(Generate UUID:C1066)
-			$Path_root.create()
+			  //$Path_root:=Folder(Temporary folder;fk platform path).folder(Generate UUID)
+			  //$Path_root.create()
 			
 			$popup:=Create menu:C408
 			
@@ -299,8 +300,8 @@ Else
 				
 				  // Keep the item path
 				$Txt_path:=$Txt_path+(Folder separator:K24:12*Num:C11(Length:C16($Txt_path)>0))+$t
-				SET MENU ITEM PARAMETER:C1004($popup;-1;$Txt_path)
 				
+				  // Case of
 				Case of 
 						
 						  //……………………………………………………………………………………………
@@ -317,7 +318,7 @@ Else
 						  //$p:=$oo.getIcon(32)
 						  //$ooo:=$Path_root.file(Generate UUID)
 						  //WRITE PICTURE FILE($ooo.platformPath;$p;".png")
-						  //SET MENU ITEM ICON($popup;-1;"file://"+$ooo.target)
+						  //SET MENU ITEM ICON($popup;-1;"path://"+$ooo.path)
 						
 						  //……………………………………………………………………………………………
 					: (Test path name:C476($Txt_path)=Is a document:K24:1)
@@ -334,7 +335,7 @@ Else
 				End case 
 			End for each 
 			
-			$Path_root.delete(Delete with contents:K24:24)
+			  //$Path_root.delete(Delete with contents)
 			
 			If (Count menu items:C405($popup)>0)
 				
