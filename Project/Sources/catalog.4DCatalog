@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
-<base name="" uuid="6CC0B7FB521941C39DAE8D1A65954547" collation_locale="fr">
+<base name="pathPicker" uuid="6CC0B7FB521941C39DAE8D1A65954547" collation_locale="fr">
 	<schema name="DEFAULT_SCHEMA"/>
 	<base_extra __stringCompHash="icu:63.1.0" __keywordBuildingHash="icu:63.1.0" package_name="4D unitTest" structure_file_name="4D unitTest" data_file_path=":4D unitTest.4DD">
 		<temp_folder folder_selector="system"/>

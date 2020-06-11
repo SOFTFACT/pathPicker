@@ -1,0 +1,1 @@
+﻿<!----------------------------------------------------Object := pathPicker ( Param_1 ; Param_2 ) -> Param_1 (Text) -> Param_2 (Object)-->Object := pathPicker
