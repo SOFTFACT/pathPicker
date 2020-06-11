@@ -1,6 +1,7 @@
 [![language](https://img.shields.io/static/v1?label=language&message=4d&color=blue)](https://developer.4d.com/)
 [![language](https://img.shields.io/github/languages/top/vdelachaux/pathPicker.svg)](https://developer.4d.com/)
 ![code-size](https://img.shields.io/github/languages/code-size/vdelachaux/pathPicker.svg)
+![GitHub](https://img.shields.io/github/license/vdelachaux/pathPicker)
 
 # What is it?
 
