@@ -15,7 +15,13 @@ The last version v18 compatible is available <a href="https://github.com/vdelach
 # Initialization
 
 ```4d
-$o:=New object$o.placeHolder:="Select the backup setting file…"$o.message:="Select a setting file…"$o.fileTypes:=".4DSettings"$o.directory:=1$o.options:=Package open+Use sheet window$picker:=pathPicker (File(Current backup settings file);$o)
+$o:=New object
+$o.placeHolder:="Select the backup setting file…"
+$o.message:="Select a setting file…"
+$o.fileTypes:=".4DSettings"
+$o.directory:=1
+$o.options:=Package open+Use sheet window
+$picker:=pathPicker (File(Current backup settings file);$o)
 ```
 
 # Properties
@@ -28,6 +34,7 @@ $o:=New object$o.placeHolder:="Select the backup setting file…"$o.message:="
 |**.type**|The type of the target (Int)\*|
 |**.platformPath**|The plateforme pathname (Text)|
 |**.path**|The POSIX pathname (Text)|
+
 \*4D constants _Is a document_ or _Is a folder_
 
 ### Widget behavior properties
@@ -44,8 +51,8 @@ $o:=New object$o.placeHolder:="Select the backup setting file…"$o.message:="
 |**.copyPath**|Display the "Copy path" item in the linked menu (Boolean)|
 |**.openItem**|Allow the opening of a folder selected in the linked menu (Boolean)|
 |**.label**|Label diplayed into the widget (Text)\*\*|
-\*See the documentation for the commands **Select a document** and **Select a folder**.
 
+\*See the documentation for the commands **Select a document** and **Select a folder**.    
 \*\*The label is displayed in red if the path name is invalid. You shouldn't have to change it
 
 ### Default values
