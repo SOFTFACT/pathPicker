@@ -29,29 +29,29 @@ $picker:=pathPicker (File(Current backup settings file);$o)
 
 ### Path properties
 
-|Properties|Contents|
-|----------|--------|
-|**.target**|The target **File** or **Folder** (Object)|
-|**.type**|The type of the target (Int)\*|
-|**.platformPath**|The plateforme pathname (Text)|
-|**.path**|The POSIX pathname (Text)|
+|Properties|type|Description
+|----------|:--------:|--------|
+|**.target**|Object|The target **File** or **Folder**|
+|**.type**|Integer|The type of the target\*|
+|**.platformPath**|Text|The plateforme pathname|
+|**.path**|Text|The POSIX pathname|
 
 \*4D constants _Is a document_ or _Is a folder_
 
 ### Widget behavior properties
 
-|Properties|Contents|
-|----------|--------|
-|**.placeHolder**|The place holder displayed if the target is empty (Text)|
-|**.message**|Title of the selection dialog box (Text)|
-|**.directory**|Directory access path (text) or memorized access path (Int)\*|
-|**.fileTypes**|List of types of documents to filter, or "*" to not filter documents(Text)\*|
-|**.options**|Selection option(s) (Int)\*|
-|**.browse**|Display the "Browse" button (Boolean)|
-|**.showOnDisk**|Display the "Show on disk…" item in the linked menu (Boolean)|
-|**.copyPath**|Display the "Copy path" item in the linked menu (Boolean)|
-|**.openItem**|Allow the opening of a folder selected in the linked menu (Boolean)|
-|**.label**|Label diplayed into the widget (Text)\*\*|
+|Properties|type|Description
+|----------|:--------:|--------|
+|**.placeHolder**|Text|The place holder displayed if the target is empty|
+|**.message**|Text|Title of the selection dialog box|
+|**.directory**|Text, Integer|Directory access path (text) or memorized access path (Int)\*|
+|**.fileTypes**|Text|List of types of documents to filter, or "*" to not filter documents\*|
+|**.options**|Integer|Selection option(s)\*|
+|**.browse**|Boolean|Display the "Browse" button|
+|**.showOnDisk**|Boolean|Display the "Show on disk…" item in the linked menu|
+|**.copyPath**|Boolean|Display the "Copy path" item in the linked menu|
+|**.openItem**|Boolean|Allow the opening of a folder selected in the linked menu|
+|**.label**|Text|Label diplayed into the widget\*\*|
 
 \*See the documentation for the commands **Select a document** and **Select a folder**.    
 \*\*The label is displayed in red if the path name is invalid. You shouldn't have to change it
