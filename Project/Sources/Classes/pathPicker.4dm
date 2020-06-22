@@ -21,7 +21,7 @@ Class constructor
 	This:C1470.openItem:=True:C214
 	
 	  // Internal
-	This:C1470.label:=""
+	This:C1470.__label:=""
 	
 	If (Count parameters:C259>=1)
 		
@@ -57,8 +57,8 @@ Class constructor
 		End if 
 	End if 
 	
-	This:C1470.geometry()
-	This:C1470._updateLabel()
+	This:C1470.__geometry()
+	This:C1470.__updateLabel()
 	
 	  //===================================================
 Function setType
@@ -122,7 +122,7 @@ Function setTarget
 				This:C1470.path:=$1.path
 				This:C1470.platformPath:=$1.platformPath
 				
-				This:C1470._updateLabel()
+				This:C1470.__updateLabel()
 				
 			Else 
 				
@@ -136,7 +136,7 @@ Function setTarget
 			This:C1470.path:=""
 			This:C1470.platformPath:=""
 			
-			This:C1470._updateLabel()
+			This:C1470.__updateLabel()
 			
 		End if 
 		
@@ -178,7 +178,7 @@ Function setPlatformPath
 			
 		End if 
 		
-		This:C1470._updateLabel()
+		This:C1470.__updateLabel()
 		
 	Else 
 		
@@ -218,7 +218,7 @@ Function setPath
 			
 		End if 
 		
-		This:C1470._updateLabel()
+		This:C1470.__updateLabel()
 		
 	Else 
 		
@@ -227,7 +227,7 @@ Function setPath
 	End if 
 	
 	  //===================================================
-Function select
+Function __select
 	
 	var $t
 	
@@ -268,12 +268,12 @@ Function select
 	If (Bool:C1537(OK))
 		
 		This:C1470.setPlatformPath(DOCUMENT)
-		This:C1470._resume()
+		This:C1470.__resume()
 		
 	End if 
 	
 	  //===================================================
-Function displayMenu
+Function __displayMenu
 	
 	  // In remote mode, the path can be in the server system format
 	var $sep : Text
@@ -419,14 +419,14 @@ Function displayMenu
 	End if 
 	
 	  //===================================================
-Function onDrag
+Function __onDrag
 	
 	var $0 : Integer
 	
 	$0:=-1+Num:C11(Test path name:C476(Get file from pasteboard:C976(1))=Num:C11(This:C1470.type))
 	
 	  //===================================================
-Function onDrop
+Function __onDrop
 	
 	DOCUMENT:=Get file from pasteboard:C976(1)
 	
@@ -435,13 +435,13 @@ Function onDrop
 		If (Position:C15(Path to object:C1547(DOCUMENT).extension;This:C1470.fileTypes)>0)
 			
 			This:C1470.setPlatformPath(DOCUMENT)
-			This:C1470._resume()
+			This:C1470.__resume()
 			
 		End if 
 	End if 
 	
 	  //===================================================
-Function _updateLabel
+Function __updateLabel
 	
 	If (Length:C16(This:C1470.platformPath)>0)
 		
@@ -476,7 +476,7 @@ Function _updateLabel
 		var $c : Collection
 		$c:=Split string:C1554(This:C1470.platformPath;This:C1470.separator;sk ignore empty strings:K86:1)
 		
-		This:C1470.label:=Choose:C955($c[$c.length-1]#$c[0];\
+		This:C1470.__label:=Choose:C955($c[$c.length-1]#$c[0];\
 			Replace string:C233(Replace string:C233(Get localized string:C991("FileInVolume");"{file}";$c[$c.length-1]);"{volume}";$c[0]);\
 			"\""+$c[$c.length-1]+"\"")
 		
@@ -485,13 +485,13 @@ Function _updateLabel
 		
 	Else 
 		
-		This:C1470.label:=""
+		This:C1470.__label:=""
 		OBJECT SET VISIBLE:C603(*;"menu@";False:C215)
 		
 	End if 
 	
 	  //===================================================
-Function _resume
+Function __resume
 	
 	If (Form:C1466.callback#Null:C1517)
 		
@@ -504,7 +504,7 @@ Function _resume
 	End if 
 	
 	  //===================================================
-Function geometry
+Function __geometry
 	
 	var $bottom;$height;$left;$Lon_width;$offset;$right;$top;$width : Integer
 	
@@ -526,7 +526,7 @@ Function geometry
 		OBJECT GET COORDINATES:C663(*;"border";$left;$top;$l;$bottom)
 		OBJECT SET COORDINATES:C1248(*;"border";$left;$top;$right;$bottom)
 		
-		This:C1470.ui()
+		This:C1470.__ui()
 		
 	Else 
 		
@@ -535,7 +535,7 @@ Function geometry
 	End if 
 	
 	  //===================================================
-Function ui
+Function __ui
 	
 	var $bottom;$l;$left;$Lon_width;$offset;$right;$top;$width : Integer
 	
@@ -572,7 +572,7 @@ Function ui
 		End if 
 	End if 
 	
-	OBJECT SET VISIBLE:C603(*;"menu@";Length:C16(This:C1470.label)>0)
+	OBJECT SET VISIBLE:C603(*;"menu@";Length:C16(This:C1470.__label)>0)
 	OBJECT SET PLACEHOLDER:C1295(*;"label";This:C1470.placeHolder)
 	
 	If (This:C1470.target#Null:C1517)

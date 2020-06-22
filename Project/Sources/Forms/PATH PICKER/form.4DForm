@@ -56,7 +56,7 @@
 					"hideFocusRing": true,
 					"sizingX": "grow",
 					"focusable": false,
-					"dataSource": "Form:C1466.label",
+					"dataSource": "Form:C1466.__label",
 					"events": []
 				},
 				"browse": {
