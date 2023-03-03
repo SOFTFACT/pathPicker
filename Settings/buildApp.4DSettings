@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <Preferences4D>
   <BuildApp>
     <BuildCompiled>False</BuildCompiled>
@@ -23,7 +23,10 @@
       <LastDataPathLookup>ByAppName</LastDataPathLookup>
       <BuildCSUpgradeable>False</BuildCSUpgradeable>
       <CurrentVers>1</CurrentVers>
-      <HardLink/>
+      <HardLink></HardLink>
+      <MacCompiledDatabaseToWinIncludeIt>False</MacCompiledDatabaseToWinIncludeIt>
+      <MacCompiledDatabaseToWin></MacCompiledDatabaseToWin>
+      <ServerEmbedsProjectDirectoryFile>False</ServerEmbedsProjectDirectoryFile>
     </CS>
     <BuildApplicationName>pathPicker</BuildApplicationName>
     <BuildMacDestFolder>:Build:</BuildMacDestFolder>
@@ -40,10 +43,19 @@
       <ArrayLicenseMac>
         <ItemsCount>0</ItemsCount>
       </ArrayLicenseMac>
+      <ArrayLicenseWin>
+        <ItemsCount>1</ItemsCount>
+        <Item1>C:\ProgramData\4D\Licenses\R-PNUD190UUC001C17BL076B9.license4D</Item1>
+      </ArrayLicenseWin>
     </Licenses>
     <SignApplication>
-      <MacSignature>True</MacSignature>
-      <MacCertificate/>
+      <MacSignature>False</MacSignature>
+      <MacCertificate></MacCertificate>
     </SignApplication>
+    <BuildWinDestFolder>\Build\</BuildWinDestFolder>
+    <ArrayExcludedModuleName>
+      <ItemsCount>0</ItemsCount>
+    </ArrayExcludedModuleName>
   </BuildApp>
+
 </Preferences4D>
