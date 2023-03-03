@@ -41,17 +41,17 @@
     </ArrayExcludedComponentName>
     <Licenses>
       <ArrayLicenseMac>
-        <ItemsCount>0</ItemsCount>
-      </ArrayLicenseMac>
+        <ItemsCount>1</ItemsCount>
+        <Item1>Macintosh HD:Users:appmaker:Library:Application Support:4D:Licenses:R-PNUD190UUC001BCIJ40D929.license4D</Item1></ArrayLicenseMac>
       <ArrayLicenseWin>
         <ItemsCount>1</ItemsCount>
         <Item1>C:\ProgramData\4D\Licenses\R-PNUD190UUC001C17BL076B9.license4D</Item1>
       </ArrayLicenseWin>
     </Licenses>
     <SignApplication>
-      <MacSignature>False</MacSignature>
-      <MacCertificate></MacCertificate>
-    </SignApplication>
+      <MacSignature>True</MacSignature>
+      <MacCertificate>ZF4Q8LEWNH</MacCertificate>
+      <AdHocSign>True</AdHocSign></SignApplication>
     <BuildWinDestFolder>\Build\</BuildWinDestFolder>
     <ArrayExcludedModuleName>
       <ItemsCount>0</ItemsCount>
