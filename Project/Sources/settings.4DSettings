@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="2172">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="2173">
 	<com.4d>
 		<compiler>
 			<options compilation_path="3" error_file="true" fat_binary="true" range_checking="true" symbol_file="true" target="all"/>
@@ -26,7 +26,7 @@
 		</sql>
 		<server>
 			<network>
-				<options use_legacy_network_layer="false"/>
+				<options publication_name="pathPicker" publish_at_startup="false" use_legacy_network_layer="false"/>
 			</network>
 		</server>
 		<deployment>

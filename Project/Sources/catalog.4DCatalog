@@ -1,8 +1,23 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
 <base name="pathPicker" uuid="6CC0B7FB521941C39DAE8D1A65954547" collation_locale="fr">
 	<schema name="DEFAULT_SCHEMA"/>
-	<base_extra __stringCompHash="icu:63.1.0" __keywordBuildingHash="icu:63.1.0" package_name="4D unitTest" structure_file_name="4D unitTest" data_file_path=":4D unitTest.4DD">
+	<table name="Table_1" uuid="68E386C4A1059D40BF25037ED35DE200" id="1">
+		<field name="ID" uuid="8827D7F2CB05A94E9CFF4D1958E6AFA0" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<primary_key field_name="ID" field_uuid="8827D7F2CB05A94E9CFF4D1958E6AFA0"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="40" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="930A0098450BCB4D96EDF9A2E0F3D26B" type="7">
+		<field_ref uuid="8827D7F2CB05A94E9CFF4D1958E6AFA0" name="ID">
+			<table_ref uuid="68E386C4A1059D40BF25037ED35DE200" name="Table_1"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0" package_name="4D unitTest" structure_file_name="4D unitTest" data_file_path=":4D unitTest.4DD">
 		<temp_folder folder_selector="system"/>
 	</base_extra>
 </base>

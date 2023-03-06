@@ -1,5 +1,21 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
 <base name="HDI" uuid="B4999C2EBCBC47D5A4FF8584D7D7CC3D" collation_locale="en">
 	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Table_1" uuid="668EA2EB2125E6439F7D18197E545553" id="1">
+		<field name="ID" uuid="B45B2F30BA0E42479F8E0EF270B9038B" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<primary_key field_name="ID" field_uuid="B45B2F30BA0E42479F8E0EF270B9038B"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="40" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="A323D748F6573B49A8BDBF05D4E2BCD5" type="7">
+		<field_ref uuid="B45B2F30BA0E42479F8E0EF270B9038B" name="ID">
+			<table_ref uuid="668EA2EB2125E6439F7D18197E545553" name="Table_1"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0"/>
 </base>
