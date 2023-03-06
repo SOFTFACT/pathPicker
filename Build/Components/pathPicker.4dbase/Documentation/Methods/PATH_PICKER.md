@@ -32,7 +32,7 @@ https://github.com/vdelachaux/pathPicker
 |**.copyPath**|Boolean|Display the "Copy path" item in the linked menu|
 |**.openItem**|Boolean|Allow the opening of a folder selected in the linked menu|
 |**.label**|Text|Label diplayed into the widget\*\*|
-|**.formBelongsToTable**|PtrTable|pointer to the table to which the form belongs. If form belongs to a project form, to not fill in|
+|**.formBelongsToTableID**|Longint|table ID to which the form belongs. If form belongs to a project form, to not fill in|
 
 \*See the documentation for the commands **Select a document** and **Select a folder**.    
 \*\*The label is displayed in red if the path name is invalid. You shouldn't have to change it
