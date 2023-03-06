@@ -23,7 +23,8 @@ Class constructor
 	// ----------------------------------------------------
 	// Modified by: SOFTFACT (06.03.23, 09:31:48)
 	// ----------------------------------------------------
-	This:C1470.formBelongsToTable:=Null:C1517
+	This:C1470.formBelongsToTableID:=0
+	
 	// ----------------------------------------------------
 	
 	
@@ -535,8 +536,8 @@ Function __geometry
 				FORM GET PROPERTIES:C674(Current form name:C1298; $Lon_width; $l)
 				
 			: (True:C214)
-				If (This:C1470.formBelongsToTable#Null:C1517)
-					FORM GET PROPERTIES:C674(This:C1470.formBelongsToTable->; Current form name:C1298; $Lon_width; $l)
+				If (This:C1470.formBelongsToTableID#0)
+					FORM GET PROPERTIES:C674(Table:C252(This:C1470.formBelongsToTableID)->; Current form name:C1298; $Lon_width; $l)
 				Else 
 					FORM GET PROPERTIES:C674(Current form name:C1298; $Lon_width; $l)
 				End if 

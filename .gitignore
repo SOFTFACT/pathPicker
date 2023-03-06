@@ -1,8 +1,8 @@
 #--------------------------------
 # Ignore invisible files/folders
 #--------------------------------
-.*
-!.gitignore
+# .*
+# !.gitignore
 
 #--------------------------------
 # Ignore data file
@@ -45,5 +45,5 @@ Thumbs.db
 #--------------------------------
 Build/Components/pathPicker.4dbase/Resources/php.ini
 HDI/Components/pathPicker.4dbase/Resources/php.ini
-DerivedData/
+# DerivedData/
 Resources/php.ini

@@ -49,8 +49,8 @@
       </ArrayLicenseWin>
     </Licenses>
     <SignApplication>
-      <MacSignature>True</MacSignature>
-      <MacCertificate>ZF4Q8LEWNH</MacCertificate>
+      <MacSignature>False</MacSignature>
+      <MacCertificate></MacCertificate>
       <AdHocSign>True</AdHocSign></SignApplication>
     <BuildWinDestFolder>\Build\</BuildWinDestFolder>
     <ArrayExcludedModuleName>
