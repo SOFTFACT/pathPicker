@@ -24,6 +24,13 @@ Class constructor
 	// Modified by: SOFTFACT (06.03.23, 09:31:48)
 	// ----------------------------------------------------
 	This:C1470.formBelongsToTableID:=0
+	If (OB Is defined:C1231($2; "formWidth")) && (OB Is defined:C1231($2; "formHeight"))
+		This:C1470.formWidth:=$2.formWidth
+		This:C1470.formHeight:=$2.formHeight
+	Else 
+		This:C1470.formWidth:=0
+		This:C1470.formHeight:=0
+	End if 
 	
 	// ----------------------------------------------------
 	
@@ -539,7 +546,11 @@ Function __geometry
 				If (This:C1470.formBelongsToTableID#0)
 					FORM GET PROPERTIES:C674(Table:C252(This:C1470.formBelongsToTableID)->; Current form name:C1298; $Lon_width; $l)
 				Else 
-					FORM GET PROPERTIES:C674(Current form name:C1298; $Lon_width; $l)
+					
+					$Lon_width:=This:C1470.formWidth
+					$l:=This:C1470.formHeight
+					
+					//FORM GET PROPERTIES(Current form name; $Lon_width; $l)
 				End if 
 		End case 
 		

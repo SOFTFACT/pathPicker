@@ -32,7 +32,10 @@ https://github.com/vdelachaux/pathPicker
 |**.copyPath**|Boolean|Display the "Copy path" item in the linked menu|
 |**.openItem**|Boolean|Allow the opening of a folder selected in the linked menu|
 |**.label**|Text|Label diplayed into the widget\*\*|
+| ||Added by LT|
 |**.formBelongsToTableID**|Longint|table ID to which the form belongs. If form belongs to a project form, to not fill in|
+|**.formWidth**|Longint|If form is a project form, set width returns from FORM GET PROPERTIES(Current form name; $formWidth; $formHeight)|
+|**.formHeight**|Longint|If form is a project form, set height returns from FORM GET PROPERTIES(Current form name; $formWidth; $formHeight)|
 
 \*See the documentation for the commands **Select a document** and **Select a folder**.    
 \*\*The label is displayed in red if the path name is invalid. You shouldn't have to change it

@@ -1,0 +1,73 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"events": [
+		"onLoad"
+	],
+	"windowTitle": "HDI Path picker",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Button": {
+					"type": "button",
+					"text": "Button",
+					"top": 70,
+					"left": 60,
+					"width": 66,
+					"height": 30,
+					"events": [
+						"onClick"
+					]
+				},
+				"pathPicker": {
+					"type": "subform",
+					"top": 14,
+					"left": 31,
+					"width": 557,
+					"height": 22,
+					"dataSourceTypeHint": "object",
+					"detailForm": "PATH PICKER",
+					"enterableInList": false,
+					"deletableInList": false,
+					"printFrame": "variable",
+					"method": "ObjectMethods/pathPicker.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.pathPicker",
+					"right": 588
+				},
+				"Text": {
+					"type": "text",
+					"text": "text default",
+					"top": 123,
+					"left": 33,
+					"width": 148,
+					"height": 15
+				}
+			}
+		}
+	],
+	"geometryStamp": 24,
+	"method": "method.4dm",
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

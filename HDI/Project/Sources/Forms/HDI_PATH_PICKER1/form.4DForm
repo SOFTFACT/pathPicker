@@ -45,8 +45,8 @@
 				},
 				"pathPicker": {
 					"type": "subform",
-					"top": 63,
-					"left": 28,
+					"top": 47,
+					"left": 30,
 					"width": 557,
 					"height": 22,
 					"dataSourceTypeHint": "object",
@@ -59,7 +59,7 @@
 						"onDataChange"
 					],
 					"dataSource": "Form:C1466.pathPicker",
-					"right": 585
+					"right": 587
 				},
 				"setDocument": {
 					"type": "button",
@@ -271,8 +271,8 @@
 				},
 				"Subform": {
 					"type": "subform",
-					"left": 501,
-					"top": 34,
+					"left": 432,
+					"top": 21,
 					"width": 262,
 					"height": 40,
 					"detailForm": "PATH PICKER",
@@ -285,7 +285,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 7,
+	"geometryStamp": 8,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
