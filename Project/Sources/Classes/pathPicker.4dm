@@ -354,16 +354,18 @@ Function __displayMenu
 			: (Find in array:C230($aVol; $t)>0)
 				
 				SET MENU ITEM ICON:C984($menu; -1; "path:/RESOURCES/pathPicker/drive.png")
-				
+				SET MENU ITEM PARAMETER:C1004($menu; -1; DOCUMENT)
 				//……………………………………………………………………………………………
 			: (Test path name:C476(DOCUMENT)=Is a folder:K24:2)
 				
 				SET MENU ITEM ICON:C984($menu; -1; "path:/RESOURCES/pathPicker/folder.png")
+				SET MENU ITEM PARAMETER:C1004($menu; -1; DOCUMENT)
 				
 				//……………………………………………………………………………………………
 			: (Test path name:C476(DOCUMENT)=Is a document:K24:1)
 				
 				SET MENU ITEM ICON:C984($menu; -1; "path:/RESOURCES/pathPicker/file.png")
+				SET MENU ITEM PARAMETER:C1004($menu; -1; DOCUMENT)
 				
 			Else 
 				

@@ -1,6 +1,13 @@
 <!-- Type your summary here -->
 Create a new path picker
 
+If you update this documentation Classes\pathPicker.md do a copy into
+|Documentation|
+|-------|
+|Documentation\Forms\PATH PICKER |
+|Documentation\Methods\PATH_PICKER.md |
+|Documentation\Methods\pathPicker.md |
+
 https://github.com/vdelachaux/pathPicker
 ## Description
 
@@ -73,3 +80,31 @@ https://github.com/vdelachaux/pathPicker
 
 1. To use the widget as is, copy the <a href="https://github.com/vdelachaux/pathPicker/tree/master/Build/Components">pathPicker.4dbase</a> into the `Components` folder of your database.
 2. If you want to integrate the component's elements into your code, you must copy the contents of the folders `Classes`, `Forms`, `Methods` & `Resources` to the corresponding folders of your database.
+
+
+|Classes|
+|-------|
+| Project\Sources\Classes\pathPicker.4dm |
+
+|Methods|
+|-------|
+| Project\Sources\Methods\PATH_PICKER.4dm |
+| Project\Sources\Methods\PATH_PICKER.4dm |
+| Project\Sources\Methods\COMPILER_pathPicker.4dm |   
+
+|Forms|
+|-------|
+|Project\Sources\Forms\PATH PICKER|
+
+|Documentation|
+|-------|
+|Documentation\Classes\pathPicker.md  |
+|Documentation\Forms\PATH PICKER |
+|Documentation\Methods\PATH_PICKER.md |
+|Documentation\Methods\pathPicker.md |
+
+
+|Resources|
+|-------|
+|Resources\pathPicker |
+|Resources\ Content of each xx.lproj |
