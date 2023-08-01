@@ -30,11 +30,24 @@
 					"height": 38,
 					"detailForm": "PATH PICKER",
 					"dataSource": "test_pp_ui"
+				},
+				"TestDisplayMenu_l": {
+					"type": "button",
+					"text": "TestDisplayMenu",
+					"top": 75,
+					"left": 28,
+					"width": 173,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "TestDisplayMenu_l",
+					"method": "ObjectMethods/TestDisplayMenu_l.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 7,
+	"geometryStamp": 10,
 	"method": "method.4dm",
 	"editor": {
 		"activeView": "View 1",

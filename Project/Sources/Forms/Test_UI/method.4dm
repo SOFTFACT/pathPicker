@@ -19,6 +19,6 @@ Case of
 		
 		
 		//C_OBJECT(test_pp_ui)
-		//test_pp_ui:=pathPicker(File(Current backup settings file).platformPath; $o)
+		test_pp_ui:=pathPicker(File:C1566(Current backup settings file:K5:29).platformPath; $o)
 		
 End case 

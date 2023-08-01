@@ -288,9 +288,10 @@ Function __select
 	End if 
 	
 	//===================================================
-Function __displayMenu
-	
+Function __buildMenu() : Text
+	// Caller should dispose menu returned by function
 	// In remote mode, the path can be in the server system format
+	var $menu : Text
 	var $sep : Text
 	
 	Case of 
@@ -325,7 +326,6 @@ Function __displayMenu
 	var $c : Collection
 	$c:=Split string:C1554(This:C1470.platformPath; $sep)
 	
-	var $menu : Text
 	$menu:=Create menu:C408
 	
 	CLEAR VARIABLE:C89(DOCUMENT)
@@ -399,9 +399,22 @@ Function __displayMenu
 			
 		End if 
 		
+	End if 
+	
+	return ($menu)
+	
+Function __displayMenu
+	// In remote mode, the path can be in the server system format
+	
+	var $menu : Text
+	$menu:=This:C1470.__buildMenu()
+	If (Count menu items:C405($menu)>0)
+		
 		var $left; $top; $right; $bottom : Integer
 		OBJECT GET COORDINATES:C663(*; "border"; $left; $top; $right; $bottom)
 		CONVERT COORDINATES:C1365($left; $bottom; 1; 2)
+		
+		var $t : Text
 		
 		$t:=Dynamic pop up menu:C1006($menu; ""; $left; $bottom-5)
 		RELEASE MENU:C978($menu)
@@ -435,6 +448,153 @@ Function __displayMenu
 		End case 
 	End if 
 	
+	
+/*
+var $sep : Text
+	
+Case of 
+	
+//……………………………………………………………………………………………
+	: (Application type=4D Remote mode)\
+		 & (Is macOS)\
+		 & (Position("\\"; This.platformPath)>0)
+	
+// macOS client with server on Windows
+$sep:="\\"
+	
+//……………………………………………………………………………………………
+	: (Application type=4D Remote mode)\
+		 & (Is Windows)\
+		 & (Position(":"; Replace string(This.platformPath; ":"; ""; 1))>0)
+	
+// Windows client with server on macOS
+$sep:=":"
+	
+//……………………………………………………………………………………………
+Else 
+	
+$sep:=Folder separator
+	
+//……………………………………………………………………………………………
+End case 
+	
+ARRAY TEXT($aVol; 0x0000)
+VOLUME LIST($aVol)
+	
+var $c : Collection
+$c:=Split string(This.platformPath; $sep)
+	
+var $menu : Text
+$menu:=Create menu
+	
+CLEAR VARIABLE(DOCUMENT)
+	
+var $t : Text
+	
+For each ($t; $c)
+	
+If (Is Windows)
+	
+APPEND MENU ITEM($menu; $t)
+	
+Else 
+	
+INSERT MENU ITEM($menu; 0; $t)
+	
+End if 
+	
+// Keep the item path
+DOCUMENT:=DOCUMENT+(Folder separator*Num(Length(DOCUMENT)>0))+$t
+	
+// Case of
+Case of 
+	
+//……………………………………………………………………………………………
+: (Find in array($aVol; $t)>0)
+	
+SET MENU ITEM ICON($menu; -1; "path:/RESOURCES/pathPicker/drive.png")
+SET MENU ITEM PARAMETER($menu; -1; DOCUMENT)
+//……………………………………………………………………………………………
+: (Test path name(DOCUMENT)=Is a folder)
+	
+SET MENU ITEM ICON($menu; -1; "path:/RESOURCES/pathPicker/folder.png")
+SET MENU ITEM PARAMETER($menu; -1; DOCUMENT)
+	
+//……………………………………………………………………………………………
+: (Test path name(DOCUMENT)=Is a document)
+	
+SET MENU ITEM ICON($menu; -1; "path:/RESOURCES/pathPicker/file.png")
+SET MENU ITEM PARAMETER($menu; -1; DOCUMENT)
+	
+Else 
+	
+SET MENU ITEM STYLE($menu; -1; Italic)
+DISABLE MENU ITEM($menu; -1)
+	
+//……………………………………………………………………………………………
+End case 
+End for each 
+	
+If (Count menu items($menu)>0)
+	
+	If (Bool(This.showOnDisk))\
+		 | (Bool(This.copyPath))
+	
+APPEND MENU ITEM($menu; "-")
+	
+End if 
+	
+If (Bool(This.showOnDisk))
+	
+APPEND MENU ITEM($menu; Get localized string("ShowOnDisk"))
+SET MENU ITEM PARAMETER($menu; -1; "show")
+	
+End if 
+	
+If (Bool(This.copyPath))
+	
+APPEND MENU ITEM($menu; Get localized string("CopyPath"))
+SET MENU ITEM PARAMETER($menu; -1; "copy")
+	
+End if 
+	
+var $left; $top; $right; $bottom : Integer
+OBJECT GET COORDINATES(*; "border"; $left; $top; $right; $bottom)
+CONVERT COORDINATES($left; $bottom; 1; 2)
+	
+$t:=Dynamic pop up menu($menu; ""; $left; $bottom-5)
+RELEASE MENU($menu)
+	
+Case of 
+	
+//……………………………………………………………………………………………
+: (Length($t)=0)
+	
+//……………………………………………………………………………………………
+: ($t="copy")
+	
+SET TEXT TO PASTEBOARD(DOCUMENT)
+	
+//……………………………………………………………………………………………
+: ($t="show")
+	
+SHOW ON DISK(DOCUMENT)
+	
+//……………………………………………………………………………………………
+: (Not(Bool(This.openItem)))
+	
+// NOTHING MORE TO DO
+	
+//……………………………………………………………………………………………
+Else 
+	
+SHOW ON DISK($t)
+	
+//……………………………………………………………………………………………
+End case 
+End if 
+	
+*/
 	//===================================================
 Function __onDrag
 	
