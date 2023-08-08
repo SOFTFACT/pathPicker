@@ -1,6 +1,13 @@
 <!-- Type your summary here -->
 Create a new path picker
 
+If you update this documentation Classes\pathPicker.md do a copy into
+|Documentation|
+|-------|
+|Documentation\Forms\PATH PICKER |
+|Documentation\Methods\PATH_PICKER.md |
+|Documentation\Methods\pathPicker.md |
+
 https://github.com/vdelachaux/pathPicker
 ## Description
 
@@ -32,7 +39,10 @@ https://github.com/vdelachaux/pathPicker
 |**.copyPath**|Boolean|Display the "Copy path" item in the linked menu|
 |**.openItem**|Boolean|Allow the opening of a folder selected in the linked menu|
 |**.label**|Text|Label diplayed into the widget\*\*|
+| ||Added by LT|
 |**.formBelongsToTableID**|Longint|table ID to which the form belongs. If form belongs to a project form, to not fill in|
+|**.formWidth**|Longint|If form is a project form, set width returns from FORM GET PROPERTIES(Current form name; $formWidth; $formHeight)|
+|**.formHeight**|Longint|If form is a project form, set height returns from FORM GET PROPERTIES(Current form name; $formWidth; $formHeight)|
 
 \*See the documentation for the commands **Select a document** and **Select a folder**.    
 \*\*The label is displayed in red if the path name is invalid. You shouldn't have to change it
@@ -70,3 +80,31 @@ https://github.com/vdelachaux/pathPicker
 
 1. To use the widget as is, copy the <a href="https://github.com/vdelachaux/pathPicker/tree/master/Build/Components">pathPicker.4dbase</a> into the `Components` folder of your database.
 2. If you want to integrate the component's elements into your code, you must copy the contents of the folders `Classes`, `Forms`, `Methods` & `Resources` to the corresponding folders of your database.
+
+
+|Classes|
+|-------|
+| Project\Sources\Classes\pathPicker.4dm |
+
+|Methods|
+|-------|
+| Project\Sources\Methods\PATH_PICKER.4dm |
+| Project\Sources\Methods\PATH_PICKER.4dm |
+| Project\Sources\Methods\COMPILER_pathPicker.4dm |   
+
+|Forms|
+|-------|
+|Project\Sources\Forms\PATH PICKER|
+
+|Documentation|
+|-------|
+|Documentation\Classes\pathPicker.md  |
+|Documentation\Forms\PATH PICKER |
+|Documentation\Methods\PATH_PICKER.md |
+|Documentation\Methods\pathPicker.md |
+
+
+|Resources|
+|-------|
+|Resources\pathPicker |
+|Resources\ Content of each xx.lproj |
