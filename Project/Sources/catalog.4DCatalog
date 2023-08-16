@@ -17,7 +17,7 @@
 			<table_ref uuid="68E386C4A1059D40BF25037ED35DE200" name="Table_1"/>
 		</field_ref>
 	</index>
-	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0" package_name="4D unitTest" structure_file_name="4D unitTest" data_file_path=":4D unitTest.4DD">
+	<base_extra __stringCompHash="icu:72.1.0" __keywordBuildingHash="icu:72.1.0" package_name="4D unitTest" structure_file_name="4D unitTest" data_file_path=":4D unitTest.4DD">
 		<temp_folder folder_selector="system"/>
 	</base_extra>
 </base>
