@@ -48,3 +48,4 @@ HDI/Components/pathPicker.4dbase/Resources/php.ini
 # DerivedData/
 Resources/php.ini
 .DS_Store
+userPreferences.*
