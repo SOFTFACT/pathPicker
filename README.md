@@ -1,6 +1,6 @@
 | Branch | 4D Version |
 |----------|--------|
-| Main branch | ![version](https://img.shields.io/badge/version-20-F070AA) |
+| master (Main branch) | ![version](https://img.shields.io/badge/version-20-F070AA) |
 | 19R8  | ![version](https://img.shields.io/badge/version-19R8-3E8B93) |
 
 
