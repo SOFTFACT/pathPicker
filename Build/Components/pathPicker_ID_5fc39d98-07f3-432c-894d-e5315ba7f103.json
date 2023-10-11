@@ -1,0 +1,19 @@
+﻿{
+  "logFormatVersion": 1,
+  "jobId": "5fc39d98-07f3-432c-894d-e5315ba7f103",
+  "status": "Accepted",
+  "statusSummary": "Ready for distribution",
+  "statusCode": 0,
+  "archiveFilename": "pathPicker.zip",
+  "uploadDate": "2023-10-11T09:18:07.722Z",
+  "sha256": "4df4ba274e458ceec68e930e1ca1e3abe770162d241662570ec1527664461b23",
+  "ticketContents": [
+    {
+      "path": "pathPicker.zip/pathPicker.4dbase/Libraries/lib4d-arm64.dylib",
+      "digestAlgorithm": "SHA-256",
+      "cdhash": "d881a75703a8fdd3bd04ce8895f7b27ce964802f",
+      "arch": "arm64"
+    }
+  ],
+  "issues": null
+}
