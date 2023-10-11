@@ -5,7 +5,7 @@
 | 19R8  | ![version](https://img.shields.io/badge/version-19R8-3E8B93) |
 
 
-# pathPicker 20R2
+# pathPicker 4D v 20R2
 
 # What is it?
 
