@@ -1,12 +1,12 @@
 
 | Information | | 
 |----------|----------|
-| ![version](https://img.shields.io/badge/4D%20version-20R2-F070AA)| ![downloads](https://img.shields.io/badge/Notarized-√-green) | 
+| ![version](https://img.shields.io/badge/4D%20version-20R3-F070AA)| ![downloads](https://img.shields.io/badge/Notarized-√-green) | 
 | ![platform](https://img.shields.io/static/v1?label=platform&message=mac-intel&color=blue) | ![platform](https://img.shields.io/static/v1?label=platform&message=mac-arm&color=blue)  | 
 | ![platform](https://img.shields.io/static/v1?label=platform&message=win-64&color=blue)  |  | 
 
 
-# pathPicker 4D 20R2
+# pathPicker 4D 20R3
 
 # What is it?
 
