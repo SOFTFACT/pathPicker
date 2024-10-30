@@ -1,17 +1,17 @@
 ﻿{
   "logFormatVersion": 1,
-  "jobId": "00ac626c-57b7-4106-b64a-342fa6d117b7",
+  "jobId": "9d27253a-d133-4297-9863-c1b73e0baace",
   "status": "Accepted",
   "statusSummary": "Ready for distribution",
   "statusCode": 0,
   "archiveFilename": "pathPicker.zip",
-  "uploadDate": "2024-04-26T08:51:16.176Z",
-  "sha256": "79517536e207217cc83fc75872a38039121977972ab487db4fc4ab8133396289",
+  "uploadDate": "2024-10-30T10:32:07.139Z",
+  "sha256": "ff6a5c4246bad25314a4f6d5494177c2e24831e9eb0f95841ad6f678c6f48f4f",
   "ticketContents": [
     {
       "path": "pathPicker.zip/pathPicker.4dbase/Libraries/lib4d-arm64.dylib",
       "digestAlgorithm": "SHA-256",
-      "cdhash": "06e7757be82037ad2ad77aa5a2fa751d820753ca",
+      "cdhash": "e0b9d34f01d1bcf33018400fc8f8beee679c1cc9",
       "arch": "arm64"
     }
   ],
