@@ -47,7 +47,7 @@
         <ItemsCount>1</ItemsCount>
         <Item1>C:\ProgramData\4D\Licenses\R-PNUD190UUC001C17BL076B9.license4D</Item1>
       </ArrayLicenseWin>
-    </Licenses>
+      <EvaluationMode>False</EvaluationMode></Licenses>
     <SignApplication>
       <MacSignature>True</MacSignature>
       <MacCertificate>ZF4Q8LEWNH</MacCertificate>

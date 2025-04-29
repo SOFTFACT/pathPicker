@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<plist>
+
+  <dict>
+    <key>CFBundleName</key>
+    <string>pathPicker</string>
+    <key>CFBundleDisplayName</key>
+    <string>pathPicker</string>
+    <key>CFBundleShortVersionString</key>
+    <string></string>
+    <key>NSHumanReadableCopyright</key>
+    <string></string>
+    <key>CFBundleVersion</key>
+    <string></string>
+  </dict>
+
+</plist>
