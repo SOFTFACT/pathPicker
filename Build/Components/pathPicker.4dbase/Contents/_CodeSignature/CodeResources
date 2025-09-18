@@ -142,11 +142,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wRJ89LhFuSPixHjmmuQ89mOzGXU=
+			ooRMeSlAHVFsE49DJb/I/MWhljs=
 			</data>
 			<key>hash2</key>
 			<data>
-			nf8TnN6Yx9hg6eqaV4CWBqijeH/qXlkE4/V1uSuK6CE=
+			o4cyWqjC5nuulqMIh7nRcGly/0IavJifKf3ExJwb5Ic=
 			</data>
 		</dict>
 		<key>Resources/cs.lproj/pathPicker.xlf</key>
@@ -310,7 +310,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			+JoKuIheQ4/k/XmolKngf6oABn8=
+			KovOcLnk6+BIJ0JgKgDdniORzjM=
 			</data>
 			<key>requirement</key>
 			<string>identifier "pathPicker.4DZ" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = ZF4Q8LEWNH</string>
